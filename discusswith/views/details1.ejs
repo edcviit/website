@@ -1,0 +1,113 @@
+<html lang="en">
+<%- include("./partials/head1.ejs") %>
+
+    <body>
+
+    <div class="details content">
+        <h2><%= topic.title %></h2>
+        <div class="content">
+            <p><%= topic.body%></p>
+        </div>
+        <h2>Comments</h2>
+        <% if (topic.comments.length > 0) { %>
+            <% topic.comments.forEach(comment => { %>
+              <a class="single">
+                <p class="title"><%= comment.username %></p>
+                <p class="snippet"><%= comment.comment %></p>
+                <% if(user){if( comment.username == user.email){ %>
+                    <a class="delete" data-doc="<%= comment._id%>">delete</a>
+                <% }} %>
+                <% if (comment.replyComment.length > 0) { %>
+                    <% comment.replyComm.forEach(replyComm => { %>
+                        <a class="single" style="padding-left: 20px;">
+                            <p class="title"><%= replyComm.username %></p>
+                            <p class="snippet"><%= replyComm.comment %></p>
+                        </a>
+                        <!-- <% if(user){if( replyComm.username == user.email){ %>
+                            <a class="delete" data-doc="<%= topic._id%>">delete</a>
+                        <% }} %> -->
+                    <% }) %>
+                <% } %>
+                <div class="col-3">
+                    <form method="POST" action="/<%= topic._id %>/replyComment" >
+                        <input type="hidden" name="comment_id" value="<%= comment._id%>" />
+                        <input type="hidden" name="username" value="<%= user.email%>" />
+                        <input type="hidden" name="email" value="<%= user.email%>" />
+                    
+                        <div class="row form-group">
+                            <textarea class="form-control" rows="3" id="comment" name="comment" placeholder="Write something.." ></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Reply</button>                
+                    </form>
+                </div>
+              </a>
+            <% }) %>
+        <% } else { %>
+            <p>There are no comments to display...</p>
+        <% } %>
+
+        <% if(user) { %>
+          <div class="card my-4" style="padding-top: 20px;">
+            <form method="POST" action="/<%= topic._id %>/comment" >
+                <input type="hidden" name="username" value="<%= user.email%>" />
+                <input type="hidden" name="email" value="<%= user.email%>" />
+            
+                <div class="row form-group">
+                    <textarea class="form-control" rows="3" id="comment" name="comment" placeholder="Write something.." ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Comment</button>                
+            </form>
+          </div>
+        <% } %>
+        <% if(user){if(user.email == "rupesh123@gmail.com"){ %>
+            <a class="delete" data-doc="<%= topic._id%>">delete</a>
+        <% }} %>
+    </div>
+
+    <%- include("./partials/footer.ejs") %>
+    
+    <script>
+        function doComment(form){
+          $.ajax({
+              req:"/comment",
+              method:"POST",
+              data:{ post_id:form.topic_id.value,
+                username:  form.username.value,
+                email:  form.email.value,
+                comment: form.comment.value },
+              success:function (response){
+                  alert(response);
+              }
+          });          
+          return false;
+        };
+        function doReply(form){
+            $.ajax({
+                req:"/replycomment",
+                method:"POST",
+                data:{ comment_id:form.comment_id.value,
+                  username:  form.username.value,
+                  email:  form.email.value,
+                  comment: form.comment.value },
+                success:function (response){
+                    alert(response);
+                }
+            });          
+            return false;
+          };
+
+        const trashcan = document.querySelector('a.delete');
+
+        trashcan.addEventListener('click', (e) => {
+        const endpoint = `/topics/${trashcan.dataset.doc}`;
+
+            fetch(endpoint, {
+                method: 'DELETE',
+            })
+            .then(response => response.json())
+            .then(data => window.location.href = data.redirect)
+            .catch(err => console.log(err));
+        });
+    </script>
+</body>
+</html>

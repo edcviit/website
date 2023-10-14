@@ -1,0 +1,18 @@
+# # DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+# PassengerAppRoot "/home/nyuvbmwh/public_html/excelsior"
+# PassengerAppLogFile "/home/nyuvbmwh/public_html/excelsior/log"
+# # DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+# # DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+# <IfModule Litespeed>
+# </IfModule>
+# # DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
+# RewriteEngine on
+# RewriteCond %{HTTP_HOST} ^excelsior\.edcviit\.com$ [OR]
+# RewriteCond %{HTTP_HOST} ^www\.excelsior\.edcviit\.com$
+# RewriteRule ^/?$ "https\:\/\/www\.edcviit\.com\/excelsior\/index\.html" [R=301,L]
+
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^excelsior\.edcviit\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.excelsior\.edcviit\.com$
+RewriteRule ^/?$ "https\:\/\/www\.edcviit\.com\/excelsior\/index\.html" [R=301,L]

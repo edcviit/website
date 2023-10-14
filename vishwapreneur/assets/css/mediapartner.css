@@ -1,0 +1,217 @@
+/** @format */
+
+#vp-slider {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#vp-slider2 {
+  position: inherit;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vp-container {
+  width: 1600px;
+  margin: auto;
+}
+/* .vp-white{
+    background-color: white;
+    padding: 20px;
+} */
+.vp-subcontainer {
+  width: 85%;
+  margin: auto;
+}
+.vp-slide-img {
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.vp-slide-img:hover {
+  box-shadow: 0 0 0 200px rgba(255, 255, 255, 0.4) inset;
+}
+.img-1 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1649531078/sponsors/logo-05-min_xtrqhx.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 250px 275px;
+}
+.img-2 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1649331127/sponsors/gfgwhitebg-02_jryaqs_1_qfjqip.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 250px 275px;
+}
+.img-3 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1648794125/sponsors/angelonewhitebg-01_onvki6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 250px 275px;
+}
+.img-4 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1649927821/sponsors/budhanibros-01-min_jbmjyy.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 250px 275px;
+}
+.img-5 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1649673083/sponsors/Media%20Partner/nmdLogoUpdated_tikgpy.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 250px 275px;
+}
+.img-6 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1649530683/sponsors/wanderlooms_fn0snf.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 250px 275px;
+}
+.img-7 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1649530683/sponsors/IMSLogo_k77oep.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 250px 275px;
+}
+.img-8 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/c_scale,h_546,w_546/v1649530683/sponsors/edwiseLogo_skj6yz.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 250px 275px;
+}
+.img-9 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1649530895/sponsors/OctaEdgeLogo_xlw5id.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 250px 275px;
+}
+/*
+.img-10 {
+    background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1647663086/sponsors/photo_2022-03-19_09-37-07_ybhudq.jpg);
+    background-position: center;
+    background-size: 100% 275px;
+} */
+.img-11 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1647663086/sponsors/photo_2022-03-19_09-37-03_pcmhrz.jpg);
+  background-position: center;
+  background-size: 250px 275px;
+}
+.img-12 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1647663087/sponsors/photo_2022-03-19_09-37-00_jttljp.jpg);
+  background-position: center;
+  background-size: 250px 275px;
+}
+.img-13 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1647663086/sponsors/photo_2022-03-19_09-36-53_modiap.jpg);
+  background-position: center;
+  background-size: 250px 275px;
+}
+.img-14 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1647663087/sponsors/photo_2022-03-19_09-37-14_ujtcq4.jpg);
+  background-position: center;
+  background-size: 250px 275px;
+}
+.img-15 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1647663086/sponsors/photo_2022-03-19_09-37-10_ybsas0.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 250px 275px;
+}
+.img-16 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1647663086/sponsors/photo_2022-03-19_09-36-56_tclxyh.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: 250px 275px;
+}
+
+.img-17 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1649398126/sponsors/StarupnewFyi_logo_1_q0c0fp.webp);
+  background-repeat: no-repeat;
+
+  background-position: center;
+  background-size: 250px 275px;
+}
+
+.img-18 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1649529665/sponsors/Media%20Partner/logo-04-min_zzsu7m.jpg);
+  background-position: center;
+  background-size: 250px 275px;
+  background-repeat: no-repeat;
+}
+
+.img-19 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1649398127/sponsors/SAAMANA_LOGO_1_srw3ss.jpg);
+  background-repeat: no-repeat;
+
+  background-position: center;
+  background-size: 250px 275px;
+}
+.img-20 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1649672367/sponsors/Media%20Partner/punyaNagari_kfeum6.png);
+  background-repeat: no-repeat;
+
+  background-position: center;
+  background-size: 250px 275px;
+}
+.img-21 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1649672743/sponsors/Media%20Partner/digpuNewsPartner_npgnvs.png);
+  background-repeat: no-repeat;
+
+  background-position: center;
+  background-size: 250px 275px;
+}
+.img-22 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/c_crop,h_300,w_300/v1649672367/sponsors/Media%20Partner/Logo_300_100_1_clpms1.png);
+  background-repeat: no-repeat;
+
+  background-position: center;
+  background-size: 250px 275px;
+}
+.img-23 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1649530683/sponsors/smitaHolidays_djqdfg.png);
+  background-repeat: no-repeat;
+
+  background-position: center;
+  background-size: 250px 275px;
+}
+.img-24 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1649673967/sponsors/EtlhiveLogo_f5dmsl.jpg);
+  background-repeat: no-repeat;
+
+  background-position: center;
+  background-size: 250px 275px;
+}
+.img-25 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1649915162/sponsors/herbgwhite-01-min_b7gaof.jpg);
+  background-repeat: no-repeat;
+
+  background-position: center;
+  background-size: 250px 275px;
+}
+.img-26 {
+  background-image: url(https://res.cloudinary.com/da5mmxnn3/image/upload/v1649915162/sponsors/unnamed-01-min_klg49a.jpg);
+  background-repeat: no-repeat;
+
+  background-position: center;
+  background-size: 250px 275px;
+}
+.vp-header {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 50px 10px 50px;
+}
+
+@media (max-width: 1600px) {
+  .vp-container {
+    width: 100%;
+  }
+}

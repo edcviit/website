@@ -1,0 +1,72 @@
+<%- include('./partials/head'); -%>
+
+<section class="text-gray-600 body-font lg:py-10">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+    <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pl-3 pr-0">
+      <h1 class="title-font font-medium text-3xl text-gray-900">Instructions/ Rules</h1>
+      <br>
+      <ul>
+          <p><b>•</b> Once you commented on the posts, you cannot delete or retrieve that comment</p>
+          <p><b>•</b> To reply on any viewer's comment you can tag him by adding '@email' in front of the comment.</p>
+          <p><b>•</b> Please maintain the decorum of the forum, inappropriate comments/activities will be prohibited.</p>
+      </ul>
+    </div>
+    <div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+      <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Login</h2>
+      <form action="/login">
+        <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+        <input type="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        <div class="email error"></div>
+      
+        <label for="password" class="leading-7 text-sm text-gray-600">Password</label>
+        <input type="password" name="password" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        <div class="password error"></div>
+
+        <button class="text-white bg-indigo-500 border-0 mt-5 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Login</button>
+      </form>
+      <a class="pt-1 text-xs text-gray-800 hover:text-red-800" href="/forgetpassword">Forget Password</a>
+      <!--<p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>-->
+    </div>
+  </div>
+</section>
+
+<%- include('./partials/footer'); -%>
+
+<script>
+  const form = document.querySelector('form');
+  const emailError = document.querySelector('.email.error');
+  const passwordError = document.querySelector('.password.error');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // reset errors
+    emailError.textContent = '';
+    passwordError.textContent = '';
+
+    // get values
+    const email = form.email.value;
+    const password = form.password.value;
+
+    try {
+      const res = await fetch('/login', { 
+        method: 'POST', 
+        body: JSON.stringify({ email, password }),
+        headers: {'Content-Type': 'application/json'}
+      });
+      const data = await res.json();
+      console.log(data);
+      if (data.errors) {
+        emailError.textContent = data.errors.email;
+        passwordError.textContent = data.errors.password;
+      }
+      if (data.user) {
+        location.assign('/topics');
+      }
+
+    }
+    catch (err) {
+      console.log(err);
+    }
+  });
+</script>

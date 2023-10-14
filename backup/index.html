@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/EDC_LOGO.png" type="image/png" sizes="16x16">
+    <title>EXCELSIOR'21 | EDC VIIT</title>
+    <!-- <link rel="icon" href="img/logos.png" type="image/x-icon" class="logo" /> -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet"> <!-- Paragraph-->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Rochester&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      /* The actual timeline (the vertical ruler) */
+      .timeline-1 {
+      border-left: 3px solid #b565a7;
+      border-bottom-right-radius: 4px;
+      border-top-right-radius: 4px;
+      background: rgba(177, 99, 163, 0.09);
+      margin: 0 70px;
+      position: relative;
+      padding: 25px;
+      list-style: none;
+      text-align: left;
+      max-width: 98%;
+      margin-bottom: 30px;
+      }      
+      @media (max-width: 767px) {
+        .timeline-1 {
+          margin: 0 auto;
+          max-width: 98%;
+          padding: 25px;
+        }
+      }
+
+      .timeline-1 .event {
+      /* border-bottom: 1px dashed #000; */
+      /* padding-bottom: 25px; */
+        padding-top: 10px;
+      /* margin-bottom: 5px; */
+      position: relative;
+      }
+      @media (max-width: 767px) {
+        .timeline-1 .event {
+          border-bottom: 1px dashed #000;
+          padding-bottom: 0px;
+           padding-top: 10px; 
+        }
+      }
+
+      .timeline-1 .event:last-of-type {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border: none;
+      }
+
+      .timeline-1 .event:before,
+      .timeline-1 .event:after {
+      position: absolute;
+      display: block;
+      top: 0;
+      }
+
+      .timeline-1 .event:before {
+      left: 0px;
+      content: attr(data-date);
+      text-align: left;
+      font-weight: 100;
+      font-size: 0.9em;
+      min-width: 120px;
+      }
+      @media (max-width: 767px) {
+        .timeline-1 .event:before {
+          left: 0px;
+          padding-top: 5px;
+          text-align: left;
+        }
+      }
+
+      .timeline-1 .event:after {
+      -webkit-box-shadow: 0 0 0 3px #b565a7;
+      box-shadow: 0 0 0 3px #b565a7;
+      left: -31.8px;
+      background: #fff;
+      border-radius: 50%;
+      height: 9px;
+      width: 9px;
+      content: "";
+      top: 5px;
+      }
+      .guest{
+        padding: 0px 120px!important;
+      }
+      @media (max-width: 767px) {
+          
+        .description h2 {
+            font-size: 16px;
+        }
+          
+        .guest{
+          padding: 0px 0px!important;
+        }
+        .guest .box {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%
+        }
+        
+       .timeline-1 .event:after {
+         top: 10px;    
+       }
+      }
+
+   </style>
+</head>
+<body style="background-color: #eeeeee!important;">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="banner" style="background: url(img/bg.webp);"></div> <!--pexels-pixabay-277253.jpg-->
+                    <div class="carousel-caption ">
+                        <h2 class="animated zoomIn img_logo" style="padding-bottom: 25px; animation-delay: 0.4s;"><span><img src="img/ExcelsiorLogo.webp"></span></h2>
+                        <!-- <h2 class="animated bounceInRight" style="animation-delay: 1.2s"><span>EXCELSIOR-2021</span></h2> -->
+                        <h3 class="pt-10" style="padding-top: 10px;"> 
+                            <ul class="animated bounceInLeft" style="font-family: CaptainMarvel!important; animation-delay: 0.6s; animation-duration: 1s;">EMBRACE</ul>
+                            <ul class="animated bounceInRight" style="font-family: CaptainMarvel!important; animation-delay: 0.6s; animation-duration: 1s;" >THE CHANGE</ul>
+                        </h3>
+                        <p class="animated fadeInUpBig" style=" animation-delay: 1.6s; animation-duration: 0.8s;">
+                            <a target="_blank" style="color: black; padding: 10px 12px !important; " href="https://docs.google.com/forms/d/e/1FAIpQLScjOljKq_9McgOC-kmDTpSu-UoQsxBxPc_q7qcmQKjDk37tbg/alreadyresponded">Register Now!</a>
+                        </p>
+                        <p class="animated fadeInUpBig" style=" animation-delay: 1.6s; animation-duration: 0.8s;">
+                            <a href="#ExcelsiorAboutUs" style="padding: 10px 12px !important; color: black;">Explore</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="banner" style="background-image: url(img/Microspeaks.webp); background-color: black;"></div>
+                    <div class="carousel-caption  " style="align-self: center !important;" >
+                         <!--<h2 class="animated zoomIn img_logo" style="animation-delay: 1.2s"><span><img src="LOGO1.png"></span></h2> -->
+                        <h3 class="animated zoomIn micro" style="font-family: CaptainMarvel!important; animation-delay: 0.4s;">MICROSPEAKS</h3>
+                         <!--<h3 class="animated fadeInUp" style="animation-delay: 1.8s">Day 2</h3> -->
+                        <p class="animated fadeInUpBig " style=" animation-delay: 1.0s; animation-duration: 0.8s;">
+                            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc-9-oYok2frR7get3lb2JU_5PWASJLjnNVf_n7nywS2iKGtQ/viewform" style="color: black; padding: 10px 12px !important;">Register Now!</a>
+                        </p>    
+                        <p class="animated fadeInUpBig " style=" padding-bottom: 110px!important;  animation-delay: 1.0s; animation-duration: 0.8s;">
+                            <a href="#MicroSpeaksAboutUs" style="padding: 10px 12px !important; color: black; ">Read More</a>
+                        </p>                    
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <section  id="ExcelsiorAboutUs" class="px-lg-5 mx-lg-5 pt-5 ">
+          <div class="flex flex-wrap py-5 px-5 ">
+
+            <div class=" col-lg-7 col-md-7 px-lg-5 py-2 py-xs-2">
+              <div class="description text-center">
+                <h1 class="font-weight-bold" style=" font-size: 40px; font-family: CaptainMarvel!important;" id="sectionHeading">EXPLORE EXCELSIOR</h1>
+                <h2 class="" style="margin-top: 0px!important; margin-bottom: 20px; font-size: 20px; " id="sectionHeading">Book the dates <b>24th</b> & <b>25th</b> April</h2>
+                <p style="font-family: 'Raleway', sans-serif;">Excelsior is an entrepreneurial summit showcasing the journeys of entrepreneurs, creators, and innovators who knew when to use first-order thinking and when to think out of the box. It is an event where young enthusiasts interact with successful industrial stalwarts and learn from their experiences and get inspired to innovate.</p>
+                <p style="font-family: 'Raleway', sans-serif;">Rightly said by Greek philosopher Heraclitus, change is the only constant. The global market varies daily and latest trends are explored. This year at Excelsior 2021, the gap between these trends and the attendees will be infused. 
+                    Let's get adapted to these changes and grasp this opportunity to achieve and excel the state of art.</p>
+                <br>
+              </div> 
+            </div>
+
+            <div class=" col-lg-4 px-lg-3 col-md-5  py-xs-2 mb-lg-5 pb-5"  >
+              <div id="content">
+                <ul class="timeline-1 text-black"  style="font-family: 'Raleway', sans-serif;">
+                  <li class="event" data-date="9:00 AM - 10:00 AM" style="padding-left:-35.8!important;">
+                    <h5 class="mb-3 ">Opening Ceremony Day 1</h5>
+                    <!-- <p>Get here on time, it's first come first serve. Be late, get turned away.</p> -->
+                  </li>
+                  <li class="event" data-date="10:00 AM - 12:00 PM">
+                    <h5 class="mb-3 ">KeyNote Session 1-2</h5>
+                    <!-- <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP &amp; Busta Rhymes as an opening show.</p> -->
+                  </li>
+                  <li class="event" data-date="1:00 PM - 3:00 PM">
+                    <h5 class="mb-3 ">KeyNote Session 3-4</h5>
+                    <!-- <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP &amp; Busta Rhymes as an opening show.</p> -->
+                  </li>
+                  <li class="event" data-date="3:00 PM">
+                      <h5 class="mb-3 ">Closing Day 1</h5>
+                      <!-- <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP &amp; Busta Rhymes as an opening show.</p> -->
+                    </li>
+                  <li class="event" data-date="9:00 AM - 9:30 AM">
+                    <h5 class="mb-3 ">Opening Day 2</h5>
+                    <!-- <p>This is where it all goes down. You will compete head to head with your friends and rivals. Get ready!</p> -->
+                  </li>
+                  <li class="event" data-date="9:30 AM - 12:00 PM">
+                    <h5>KeyNote Session 5-6</h5>
+                    <!-- <p class="mb-0">See how is the victor and who are the losers. The big stage is where the winners bask in their own glory.</p> -->
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="row px-lg-5 mx-lg-5 py-3 guest mb-5" id="ExcelsiorGuests">
+
+            <!-- Grid column -->
+            <div class="col-lg-3 col-md-6 px-md-5 col-sm-6 mb-lg-0 mb-5" >
+      
+              <div class="mb-0 box">
+      
+                <!-- Image -->
+                <div class="view  z-depth-2 mb-0" >
+                  <img class="img-fluid imgBx" style="border-radius: 5px!important;" src="img/guest/munaf.webp" alt="Munaf Kapadia">
+                </div>
+                <div>
+                   <h4 class="  mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Munaf Kapadia</h4>
+                  <p class=" font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway';  text-align: center;" id="post-size"><strong>Founder & CEO The Bohri Kitchen</strong></p>
+                </div>
+              </div>     
+      
+            </div>
+            <!-- Grid column -->
+            
+            <!-- Grid column -->
+            <div class="col-lg-3 col-md-6 px-md-5 col-sm-6 mb-lg-0 mb-5">
+      
+              <div class="mb-0 box">
+      
+                <!-- Image -->
+                <div class="view z-depth-2 mb-0 " >
+                  <img class="img-fluid imgBx" style="border-radius: 5px!important;" src="img/guest/deepak.webp" alt="Deepak Parekh">
+                </div>
+                <div>
+                   <h4 class=" mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Deepak Parekh</h4>
+                  <p class=" font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; text-align: center;" id="post-size"><strong>Co-Founder CareerKeeda</strong></p>
+                </div>
+              </div>     
+              
+                 
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-lg-3 col-md-6 px-md-5 col-sm-6 mb-lg-0 mb-5">
+      
+              <div class="mb-0 box">
+      
+                <!-- Image -->
+                <div class="view  z-depth-2 mb-0  " >
+                  <img class="img-fluid imgBx" style="border-radius: 5px!important;" src="img/guest/divyanshu.webp" alt="Divyanshu Damani">
+                </div>
+                <div>
+                   <h4 class=" mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Divyanshu Damani </h4>
+                  <p class=" font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway';  text-align: center;" id="post-size"><strong>Co-Founder & CEO TagMango</strong></p> 
+                </div>
+              </div>  
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-lg-3 col-md-6 px-md-5 col-sm-6 mb-lg-0 mb-5" >
+      
+              <div class="mb-0 box">
+      
+                <!-- Image -->
+                <div class="view z-depth-2 mb-0" >
+                  <img class="img-fluid imgBx" style="border-radius: 5px!important;" src="img/guest/utkarsh.webp" alt="Utkarsh Amitabh">
+                </div>
+                <div>
+                  <!--<h2 class=" mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-weight: 800!important; font-family: 'Raleway'; text-align: center;">Loading...</h2>    -->
+                   <h4 class=" mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Utkarsh Amitabh</h4>
+                  <p class=" font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; text-align: center;" id="post-size"><strong>CEO Network Capital</strong></p>              
+                </div>
+              </div>     
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+      
+        </section>
+        
+
+
+
+        <section  id="MicroSpeaksAboutUs" class="px-lg-5 mx-lg-5" >
+          <div class="flex flex-wrap py-5 px-5 ">
+
+            <div class=" col-lg-7 col-md-7  px-lg-5 py-2 py-xs-2">
+              <div class="description text-center">
+                <h1 class="font-weight-bold" style=" font-size: 36px; font-family: CaptainMarvel!important;" id="sectionHeading">microSPEAKS</h1>
+                <h2 class="" style="margin-top: 0px!important; margin-bottom: 20px; font-size: 20px; " id="sectionHeading">Book the date <b>25th</b> April</h2>
+                <p style="font-family: 'Raleway', sans-serif;">The Second Day of Excelsior, also known as <b>MicroSpeaks</b> is structured for the overall development of the attendees. This day plays a vital role in inculcating the skills required for their upcoming journey of start-ups, establishing contacts and building a strong network of like-minded people.</p>
+                <p style="font-family: 'Raleway', sans-serif;">This day will serve the purpose of a platform for people to have meaningful and purpose-driven conversations with distinguished guests. 
+                    Our goal is to bring together bright minds to have conversations that are idea-focused, and on a wide range of subjects, to foster learning, inspiration and wonder – and provoke conversations that matter.</p>
+                <br>
+              </div> 
+            </div>
+
+            <div class=" col-lg-4 px-lg-3 col-md-5 py-lg-5 py-xs-2 mb-lg-5 py-5"  >
+              <div id="content">
+                <ul class="timeline-1 text-black"  style="font-family: 'Raleway', sans-serif;">
+                  <li class="event" data-date="1:00 PM Onwards" style="padding-left:-35.8!important;">
+                    <h5 class="mb-3 ">Opening Ceremony </h5>
+                  </li>
+                  <li class="event" data-date="1:30 PM - 2:00 PM">
+                    <h5 class="mb-3 ">BreakOut Session 1</h5>
+                  </li>
+                  <li class="event" data-date="2:00 PM - 2:30 PM">
+                    <h5 class="mb-3 ">BreakOut Session 2</h5>
+                    </li>
+                  <li class="event" data-date="2:30 PM - 3:00 PM">
+                    <h5 class="mb-3 ">BreakOut Session 3</h5>
+                  </li>
+                  <li class="event" data-date="3:00 PM - 3:30 PM">
+                    <h5 class=" ">Closing Ceremony</h5>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="flex flex-wrap justify-content-center px-lg-5 pb-lg-5 guest mb-5" id="MicroSpeaksGuests" style="align-items: center!important" >
+
+            <!-- Grid column -->
+            <div class="col-lg-3 col-md-6  px-md-5 px-lg-5 col-sm-6 mb-lg-5 mb-5" >
+      
+              <div class="mb-2 box">
+      
+                <!-- Image -->
+                <div class="view  z-depth-2 mb-0" >
+                  <img class="img-fluid imgBx" style="border-radius: 5px!important;" src="img/guest/ashutosh-sathe.webp" alt="Ashutosh Sathe">
+                </div>
+                <div>
+                   <h4 class="  mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Ashutosh Sathe</h4>
+                  <p class=" font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway';  text-align: center;" id="post-size"><strong>Founder PEGs Consulting LLP</strong></p>
+                </div>
+              </div>     
+      
+            </div>
+            <!-- Grid column -->
+            
+            <!-- Grid column -->
+            <div class="col-lg-3 col-md-6 px-md-5  px-lg-5 col-sm-6 mb-lg-5 mb-5" >
+      
+              <div class="mb-2 box">
+      
+                <!-- Image -->
+                <div class="view z-depth-2 mb-0 " >
+                  <img class="img-fluid imgBx" style="border-radius: 5px!important;" src="img/guest/himanshu-jadhav.webp" alt="Himanshu Jadhav">
+                </div>
+                <div>
+                   <h4 class=" mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Himanshu Jadhav</h4>
+                  <p class=" font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; text-align: center;" id="post-size"><strong>CEO Jendamark Pvt.Ltd</strong></p>
+                </div>
+              </div>     
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-lg-3 col-md-6 px-md-5 px-lg-5 col-sm-6 mb-lg-5 mb-5" >
+      
+              <div class="mb-2 box">
+      
+                <!-- Image -->
+                <div class="view  z-depth-2 mb-0  " >
+                  <img class="img-fluid imgBx" style=" width: auto; border-radius: 5px!important;" src="img/guest/abhishek-shelar.webp" alt="Abhishek Shelar">
+                </div>
+                <div>
+                   <h4 class=" mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Abhishek Shelar</h4>
+                  <p class=" font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway';  text-align: center;" id="post-size"><strong>CEO Spruce Up Industries Pvt.Ltd</strong></p> 
+                </div>
+              </div>  
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <!--<div class="col-lg-3 col-md-3  px-lg-5 col-sm-6 mb-lg-5 mb-5" >-->
+      
+            <!--  <div class="mb-2 px-lg-3 box">-->
+      
+      
+            <!--    <div class="view z-depth-2 mb-0" >-->
+            <!--      <img class="img-fluid imgBx" style="border-radius: 5px!important;" src="img/guest/arjun.webp" alt="Arjun Vaidya">-->
+            <!--    </div>-->
+            <!--    <div>-->
+            <!--       <h4 class=" mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Arjun Vaidya</h4>-->
+            <!--      <p class=" font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; text-align: center;" id="post-size"><strong>Ex-CEO Dr Vaidya</strong></p>-->
+            <!--      <p class=" font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; text-align: center;" id="post-size">EXCELSIOR</p>            -->
+            <!--    </div>-->
+            <!--  </div>     -->
+      
+            <!--</div>-->
+            <!-- Grid column -->
+      
+          </div>
+      
+        </section>
+        
+        
+          <footer >
+            <!-- Grid row -->
+            <div  class="flex flex-wrap px-2 px-lg-4 px-md-4  align-items-center">
+          
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-4 py-lg-2 pt-2">
+          
+                <!--Copyright-->
+                <a href="#"></a>
+                  <strong><h5 class="text-center text-md-left" >EDC VIIT 2020 | Developed by: EDC VIIT</h5></strong>
+                </a>
+          
+              </div>
+              <!-- Grid column -->
+              
+              <div class="col-lg-4 col-md-3 text-center">
+                <a href="tel:+91-8623907651" ><ul class="list-unstyled list-inline pt-3" ><li><i class="fas fa-phone blue-text "></i></li><li><p>+91-8623 907 651</p></li></ul></a>
+              </div>
+          
+              <!-- Grid column -->
+              <div class="col-md-5 pt-lg-1 col-lg-4 ml-lg-0">
+          
+                <!-- Social buttons -->
+                <div class="text-center text-md-right" >
+                    <ul class="list-unstyled list-inline pb-lg-2">
+                      <li class="list-inline-item">
+                        <a class="btn-floating btn-sm rgba-white-slight mx-0" target="_blank" href="https://www.instagram.com/edcviit">
+                          <i class="fab fa-2x fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="btn-floating btn-sm rgba-white-slight mx-0" target="_blank" href="https://twitter.com/edcviit">
+                          <i class="fab fa-2x fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="btn-floating btn-sm rgba-white-slight mx-0" target="_blank" href="https://www.linkedin.com/company/entrepreneurship-development-cell-viit/">
+                          <i class="fab  fa-2x fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="btn-floating btn-sm rgba-white-slight mx-0" target="_blank" href="https://www.youtube.com/user/vishwapreneur">
+                          <i class="fab  fa-2x fa-youtube"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="btn-floating btn-sm fb-ic rgba-white-slight mx-0" target="_blank" href="https://www.facebook.com/EDC.VIIT">
+                          <i class="fab  fa-2x fa-facebook-f"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+          
+              </div>
+              <!-- Grid column -->
+          
+            </div>
+            <!-- Grid row -->
+          
+          </div>
+          <!-- Footer Links -->
+          </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+        <script language="JavaScript" type="text/javascript">
+          $(document).ready(function(){
+            $('.carousel').carousel({
+              interval: 30000
+            })
+          });
+        </script>
+</body>
+</html>

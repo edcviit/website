@@ -1,0 +1,13 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/nyuvbmwh/public_html/discusswith"
+PassengerBaseURI "/"
+PassengerNodejs "/home/nyuvbmwh/nodevenv/public_html/discusswith/12/bin/node"
+PassengerAppType node
+PassengerStartupFile app.js
+PassengerAppLogFile "/home/nyuvbmwh/public_html/discusswith/log"
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
+#RewriteRule ^/?$ "https\:\/\/www\.discusswith.edcviit\.com" [R=301,L]

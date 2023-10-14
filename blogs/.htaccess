@@ -1,0 +1,4 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^blogs\.edcviit\.com$
+RewriteRule ^/?$ "https\:\/\/www\.edcviit\.com\/blogs\/index\.html" [R=301,L]

@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Corpstrata</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="assets/img/edc-logo-text.png" type="image/png" sizes="16x16" />
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/corpstrata.css" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
+
+    <!-- Animations -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index-page.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115880700-2"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-115880700-2');
+    </script>
+
+    <style type="text/css">
+    .loadera {
+      background: #fff;
+      background: radial-gradient(#fff, #aaa);
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 99999;
+  }
+
+  .loader-inner {
+      bottom: 0;
+      height: 60px;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100px;
+  }
+
+  .loader-line-wrap {
+      animation: 
+      spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+    ;
+      box-sizing: border-box;
+      height: 50px;
+      left: 0;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      transform-origin: 50% 100%;
+      width: 100px;
+  }
+  .loader-line {
+      border: 4px solid transparent;
+      border-radius: 100%;
+      box-sizing: border-box;
+      height: 100px;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100px;
+  }
+  .loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
+  .loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
+  .loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
+  .loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
+  .loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
+  .loader-line-wrap:nth-child(1) .loader-line {
+      border-color: hsl(0, 0%, 0%);
+      height: 90px;
+      width: 90px;
+      top: 7px;
+  }
+  .loader-line-wrap:nth-child(2) .loader-line {
+      border-color: hsl(0, 0%, 10%);
+      height: 76px;
+      width: 76px;
+      top: 14px;
+  }
+  .loader-line-wrap:nth-child(3) .loader-line {
+      border-color: hsl(0, 0%, 20%);
+      height: 62px;
+      width: 62px;
+      top: 21px;
+  }
+  .loader-line-wrap:nth-child(4) .loader-line {
+      border-color: hsl(0, 0%, 30%);
+      height: 48px;
+      width: 48px;
+      top: 28px;
+  }
+  .loader-line-wrap:nth-child(5) .loader-line {
+      border-color: hsl(0, 0%, 40%);
+      height: 34px;
+      width: 34px;
+      top: 35px;
+  }
+
+  @keyframes spin {
+      0%, 15% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  </style>
+
+</head>
+
+<body>
+    <!--<div class="loadera" id="loaderss">
+			<div class="loader-inner">
+				<div class="loader-line-wrap">
+					<div class="loader-line"></div>
+				</div>
+				<div class="loader-line-wrap">
+					<div class="loader-line"></div>
+				</div>
+				<div class="loader-line-wrap">
+					<div class="loader-line"></div>
+				</div>
+				<div class="loader-line-wrap">
+					<div class="loader-line"></div>
+				</div>
+				<div class="loader-line-wrap">
+					<div class="loader-line"></div>
+				</div>
+			</div>
+		</div> -->
+
+    <!-- Navbar -->
+
+   <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="300">
+          <div class="container">
+        <div class="navbar-translate">
+          <a class="navbar-brand" href="index.html">EDC VIIT<!-- <img src="assets/img/edc-logo-transparent-background.png"> --></a>
+                <button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+                </button>
+        </div>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a href="https://www.edcviit.com/blogs/index.html" target="_blank" class="nav-link"><i class="nc-icon nc-book-bookmark"></i>Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#readmore" class="nav-link"><i class="nc-icon nc-satisfied"></i>About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ourteam.html" class="nav-link"><i class="nc-icon nc-diamond"></i>Our Team</a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="index.html#contactus" class="nav-link"><i class="nc-icon nc-chat-33"></i>Contact Us</a>
+                    </li>
+            <li class="nav-item">
+                          <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/edcviit" target="_blank">
+                              <i class="fa fa-twitter"></i>
+                              <p class="d-lg-none">Twitter</p>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/EDC.VIIT" target="_blank">
+                              <i class="fa fa-facebook-square"></i>
+                              <p class="d-lg-none">Facebook</p>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/edcviit" target="_blank">
+                              <i class="fa fa-instagram"></i>
+                              <p class="d-lg-none">Instagram</p>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" rel="tooltip" title="Subscribe us on Youtube" data-placement="bottom" href="https://www.youtube.com/user/vishwapreneur" target="_blank">
+                              <i class="fa fa-youtube-play"></i>
+                              <p class="d-lg-none">Youtube</p>
+                          </a>
+                      </li>
+                      <div class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="dropdownMenuButton" href="#pk" role="button" aria-haspopup="true" aria-expanded="true">Initiatives</a>
+                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">B-Plan</a>
+                            <a class="dropdown-item" href="sfc.html">SFC</a>
+                            <a class="dropdown-item" href="#">Corpstrata</a>
+                            <a class="dropdown-item" href="http://www.vishwapreneur.com/">Vishwapreneur</a>
+                            <a class="dropdown-item" href="#">Industrial Visit</a>
+                         </ul>
+                  </div>
+                </ul>
+            </div>
+      </div>
+      </nav>
+  <!-- end navbar  -->
+
+    <!-- MAIN PAGE -->
+    <div class="wrapper">
+        <div class="page-header" style="background-image: url('assets/img/black.png');">
+            <div class="filter"></div>
+            <div class="v-header containera">
+                <div class="fullscreen-video-wrap">
+                    <video src="assets/videos/corp.mp4" autoplay="autoplay" loop="loop" muted>
+                    </video>
+                </div>
+               <div class="header-content text-md-center">
+                        <div class="imgcontainer"><img alt="Logo" class="avatar" src="assets/img/cslogo.png" />
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- BODY -->
+		<div class="bplan-font">
+			<div class="section">
+			 <div class="col-md-8 ml-auto mr-auto">
+				<br>
+                <h2 class="text-center">Corpstrata</h2>
+                <br>
+                <h4 class="description text-center">Corpstrata as the name suggests 'Coporate-Strategy' is event of fun and learning where student participate in activities to inculcate entrepreneurial skills in them and get in touch with corporate world.</h4>
+                   </div>
+			</div>
+			</div>
+			
+			<div class="section text-center section-dark">
+            <div class="container">
+          <div class="row">
+            <div class="owl-carousel owl-theme">
+               
+<div class="item"><div class="card card-plain">
+                   <h2 class="title">Acridd Hunt</h2>
+				   <h4 class="title">Crack the Clues or you lose</h4>
+                           <div class="card-body">
+                                
+                                    <div class="author">
+                                        <!-- <h4 class="card-title">Bol na aunty aau kya?</h4> -->
+										 <p class="card-description text-center">
+                                It is the mixture of acting and riddles, basically it's a treasure hunt. In which you'll get to know about many companies through their tagline.
+
+                                </p>
+								</div>                  
+                             </div>
+                              </div></div>		
+				<div class="item"><div class="card card-plain">
+                   <h2 class="title">Eliminator-X</h2>
+				   <h4 class="title">Play in your world, get eliminated in ours.</h4>
+                           <div class="card-body">
+                                
+                                    <div class="author">
+                                        <!-- <h4 class="card-title">Bol na aunty aau kya?</h4> -->
+										 <p class="card-description text-center">
+                                This is a physical activity with some twisted quiz which will give you a short experience of Roadies.
+
+                                </p>
+								</div>                  
+                             </div>
+                              </div></div>		
+				<div class="item"><div class="card card-plain">
+                   <h2 class="title">CORP-G</h2>
+				   <h4 class="title">Winner Winner Corporate Leader</h4>
+                           <div class="card-body">
+                                
+                                    <div class="author">
+                                        <!-- <h4 class="card-title">Bol na aunty aau kya?</h4> -->
+										 <p class="card-description text-center">
+This is a real-life PUBG with a touch a Corporate World and gives a glimpse of the part to become a Corporate Leader.
+                                </p>
+								</div>                  
+                             </div>
+                              </div></div>
+				<div class="item"><div class="card card-plain">
+                   <h2 class="title">Wall Street Survivor</h2>
+				   <h4 class="title">Be the Wolf of Wall Street</h4>
+                           <div class="card-body">
+                                
+                                    <div class="author">
+                                        <!-- <h4 class="card-title">Bol na aunty aau kya?</h4> -->
+										 <p class="card-description text-center">
+                                This activity gives you a short experience of Share Market and how to invest with handling roumours.
+
+                                </p>
+								</div>                  
+                             </div>
+                              </div></div>			
+				<div class="item"><div class="card card-plain">
+                   <h2 class="title">Quiddle</h2>
+				   <h4 class="title">Outwit. Outplay. Outsmart.</h4>
+                           <div class="card-body">
+                                
+                                    <div class="author">
+                                        <!-- <h4 class="card-title">Bol na aunty aau kya?</h4> -->
+										 <p class="card-description text-center">
+It is a combination of Quiz and Riddle where you'll learn some Entrepreneural skills.
+                                </p>
+								</div>                  
+                             </div>
+                              </div></div>
+				<div class="item"><div class="card card-plain">
+                   <h2 class="title">Labyrinth of Unknown</h2>
+				   <h4 class="title">The only way out is Knowledge</h4>
+                           <div class="card-body">
+                                
+                                    <div class="author">
+                                        <!-- <h4 class="card-title">Bol na aunty aau kya?</h4> -->
+										 <p class="card-description text-center">
+It a physical activity similar to treasure hunt, where you'll have to search for a products through hidden clues.
+                                </p>
+								</div>                  
+                             </div>
+                              </div></div>
+				<div class="item"><div class="card card-plain">
+                   <h2 class="title">Bid Buy Bid</h2>
+				   <h4 class="title">Trade, Bid & Enjoy</h4>
+                           <div class="card-body">
+                                
+                                    <div class="author">
+                                        <!-- <h4 class="card-title">Bol na aunty aau kya?</h4> -->
+										 <p class="card-description text-center">
+It is a corporate Auction where you have to bid for Companies & CEO's in given fixed amount.
+                                </p>
+								</div>                  
+                             </div>
+                              </div></div>
+							  				<div class="item"><div class="card card-plain">
+                   <h2 class="title">Blind Maze</h2>
+				   <h4 class="title">The only way lies within</h4>
+                           <div class="card-body">
+                                
+                                    <div class="author">
+                                        <!-- <h4 class="card-title">Bol na aunty aau kya?</h4> -->
+										 <p class="card-description text-center">
+It is a combination of Maze game and Blind fold, where you'll have to search for Companies through maze while being blind folded.
+                                </p>
+								</div>                  
+                             </div>
+                              </div></div>
+				<div class="item"><div class="card card-plain">
+                   <h2 class="title">Hunt-repreneur</h2>
+				   <h4 class="title">Think Smart, every move counts.</h4>
+                           <div class="card-body">
+                                
+                                    <div class="author">
+                                        <!-- <h4 class="card-title">Bol na aunty aau kya?</h4> -->
+										 <p class="card-description text-center">
+This is a board game similar to Scotland-yard game where you'll have to Hunt for Entrepreneurs through game.
+                                </p>
+								</div>                  
+                             </div>
+                              </div></div>
+							  				<div class="item"><div class="card card-plain">
+                   <h2 class="title">Hurdlon</h2>
+				   <h4 class="title">Across a dozen dimensions.</h4>
+                           <div class="card-body">
+                                
+                                    <div class="author">
+                                        <!-- <h4 class="card-title">Bol na aunty aau kya?</h4> -->
+										 <p class="card-description text-center">
+It is fun based activity where you'll get hand to hand experience of overall journey of startup.
+                                </p>
+								</div>                  
+                             </div>
+                              </div></div>					  
+        </div>
+</div>
+</div>
+</div>
+			<!-- Benefits -->
+			<div class="section">
+				<div class="text-center"><h2>Benefits of Corpstrata</h2></div><br>
+					<div class="text-center">
+						<div class="abc">
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">&#x022C5; Boosts corporate knowledge</li>
+									<li class="list-group-item">&#x022C5; Overall Team-Bonding</li>
+									<li class="list-group-item">&#x022C5; Instant Decision Making Capacity</li>
+									<li class="list-group-item">&#x022C5; Thinking out of the box</li>
+									<li class="list-group-item">&#x022C5; Efficient Time management</li>
+									<li class="list-group-item">&#x022C5; Fun learning</li>
+								</ul>
+							</div>
+						</div>
+			</div>
+			
+			
+			
+			
+			<!-- SPONSORS -->
+			<div class="section section-dark">
+				<div class="container">
+				<h2 class="title text-center">Our Sponsors</h2>
+				<div class="row text-center">
+					<div class="col-sm-6">
+							<div class="col-sm-12"><a href="http://www.sunbeaminfo.com/"><img src="assets/img/sunbeam.jpg" width="40%" height="40%" style="padding-bottom: 15px;"></a></div>
+						</div>
+						<div class="col-sm-6">
+							<div class="col-sm-12"><a href="https://www.doormonk.in/"><img src="assets/img/doormonk.jpg" width="40%" height="40%"></a></div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<nav class="footer-nav">
+					<ul>
+						<li><a href="ourteam.html">Our Team</a></li>
+						<li><a href="http://edcviit.com/blogs/index.html" target="_blank">Blogs</a></li>
+						<li><a href="index.html#readmore">About Us</a></li>
+					</ul>
+				</nav>
+				<div class="credits ml-auto">
+					<span class="copyright">© <script>document.write(new Date().getFullYear())</script> EDC VIIT, made by the EDC Web Development Team.
+					</span>
+				</div>
+			</div>
+		</div>
+  </div>
+            </div>
+          </div>
+</footer>
+<!-- End footer -->
+</body>
+
+<!-- Core JS Files -->
+<script src="assets/js/jquery-3.2.1.js" type="text/javascript"></script>
+<script src="assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
+<script src="assets/js/popper.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap-switch.min.js"></script>
+
+<!--  Paper Kit Initialization snd functons -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/owl.carousel.js"></script>
+
+<!-- Navbar Closer -->
+<script type="text/javascript">
+    $(document).ready(function () {
+         $(document).click(function (event) {
+             var clickover = $(event.target);
+             var _opened = $(".navbar-collapse").hasClass("show");
+             if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+                 $(".navbar-toggler").click();
+             }
+         });
+     });
+</script>
+
+<script type="text/javascript">
+    var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:1,
+    loop:true,
+    margin:10,
+    stagePadding:20,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+     responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    }
+});
+</script>
+<script type="text/javascript">
+	$(document).ready(function() {
+window.onload = function () {
+$('#loaderss').fadeOut(500, function(){ $('#loaderss').remove(); } );
+}
+});
+</script>
+</html>

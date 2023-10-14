@@ -1,0 +1,43 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <div class="lg:py-10 lg:mx-20 lg:px-20 md:col-span-2 " >
+    
+    <form action="/topics" method="POST">
+      <div class="shadow sm:rounded-md sm:overflow-hidden">
+        <div class="px-4 bg-white space-y-6 sm:p-6 " style="background-color: beige;">
+          <% if(user) { %>
+            <p class="pt-2">Hi, <%= user.email %></p>
+          <% } %>
+          <div class="grid  gap-6">
+            <div class="col-span-3 sm:col-span-2">
+              <label for="category" class="pb-1 block text-sm font-medium text-gray-700">Category</label>
+              <input type="text " name="category" id="category" class="p-3 focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Title of the blog">
+              
+              <label for="title" class="pt-3 pb-1 block text-sm font-medium text-gray-700">Title</label>
+              <input type="text " name="title" id="title" class="p-3 focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Title of the blog">
+              
+              <label for="street_address" class="pt-3 pb-1 block text-sm font-medium text-gray-700">Snippet</label>
+              <input type="text" name="snippet" id="snippet" class=" p-3 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+              
+              <div> <!--body -->
+                <label for="body" class="pt-3 block text-sm font-medium text-gray-700">Body</label>
+                <div class="mt-1">
+                  <textarea id="body" name="body" required rows="3" class="p-3 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Explain about topic."></textarea>
+                </div>
+                <p class="mt-1  text-sm text-gray-500">
+                  This will display on the dedicated page of the Topic.
+                </p>
+              </div>
+              <button class="text-white bg-indigo-500 border-0 mt-2 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>

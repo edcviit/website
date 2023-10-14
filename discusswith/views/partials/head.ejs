@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Discussion Forum | EDC VIIT</title>
+        <meta name="description" content="An Initiative by EDC, VIIT to make enthusiasts think deeper and portray thoughts.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        
+    </head>
+    <body>
+      <header class="text-gray-600 body-font" style="background-color: #16384C;">
+        <div class="container mx-auto flex flex-wrap px-5 py-3 lg:py-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-1 md:mb-0" style="text-align: center;">
+            
+            <span class="ml-3 text-xl text-white" style="text-align: center;">Entrepreneurship Development Cell</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 text-gray-200 hover:text-blue-300" href="/topics">All Topics</a>
+            <!-- <a class="mr-5 text-gray-200 hover:text-blue-300" href="/about">About</a> -->
+            <% if (user) { %>
+              <% if (user.email == "admin@edc.com") { %>
+                <a class="mr-5 text-gray-200 hover:text-blue-300" href="/topics/create">New Topic</a>
+              <% } %>
+            <% } %>
+          </nav>
+          <% if (user) { %>
+            <a class="mr-5 text-gray-200 " >Welcome, <%= user.email %></a>
+            <a href="/logout"><button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-2 md:mt-0 ">Log Out
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button></a>
+          <% } else { %>
+            <div class="inline-flex">
+              <a href="/login"><button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-2 md:mt-0 mr-4">Log In
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button></a>
+              <a href="/signup"><button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-2 md:mt-0 ">Sign Up
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button></a>
+            </div>
+          <% } %>
+        </div>
+      </header>
