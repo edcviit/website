@@ -26,8 +26,9 @@
   <!-- Paragraph-->
   <!-- <link href="css/addons-pro/timeline.css" rel="stylesheet"> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"> <!--edc-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"> edc
+  <!-- rocket -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <!--Loader-->
 
@@ -284,12 +285,18 @@
       -webkit-animation-delay: 4s, 2.5s;
       animation-delay: 4s, 2.5s
     }
+
+    .hidden {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
   </style>
 </head>
 
 <body onload="loadfunction()">
-  <div id="loading" class="z-depth-5">
-    <div class="loader">
+    <div id="loading" class="z-depth-5" style="background: white;">
+  <div class="loader">
       <span style="--i:1;"></span>
       <span style="--i:2;"></span>
       <span style="--i:3;"></span>
@@ -312,6 +319,8 @@
       <span style="--i:20;"></span>
       <div class="rocket"></div>
     </div>
+
+    <img src="LoaderAnimations/Friday2.gif" alt="Loading GIF" class="loading-gif" style="background: white;">
   </div>
   <!-- Loader ends -->
 
@@ -1422,12 +1431,25 @@
   <!--/Footer-->
   <!-- footer end-->
 
+
+
+  </style>
   <script>  //rocket loader
     var preloader = document.getElementById("loading");
     function loadfunction() {
-      preloader.style.display = 'none';
+      // Add the 'hidden' class to enable the transition
+        preloader.classList.add('hidden');
+  
+        // Optional: You can remove the loader from the DOM after the transition
+        setTimeout(function() {
+          preloader.style.display = 'none';
+        }, 500); // Adjust the time based on the transition duration
     }
   </script>
+
+
+  
+
 
   <!-- Particle Background -->
   <script type="text/javascript" src="assets20/js/particle.js"></script>
