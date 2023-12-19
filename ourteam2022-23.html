@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>OUR TEAM | EDC VIIT</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/EDC_LOGO.png" type="image/x-icon">
+  <!--Swiper-->
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="assets/css/mdb.min.css" rel="stylesheet">
+  <!-- Custom Styles-->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/custom-styles.css" rel="stylessheet">
+  <!--Fonts-->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Lora&family=Kurale&family=Raleway:wght@500&display=swap" rel="stylesheet"><!--Description:PT+Serif,Name:Lora, Post:Raleway font-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7L8Z8RNLW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-V7L8Z8RNLW');
+    </script>
+    
+<style>
+  .spacing{
+    padding-bottom: 4rem;
+  }
+@media(max-width:576px){
+    #img-responsive{
+        height: 200px;
+        width: 200px;;
+    }
+    #img-responsive2{
+        height: 120px;
+        width: 120px;;
+    }
+    .resize-font{
+      font-size: 13px;
+    }
+    #content-size{
+      font-size: 11px;
+      line-height: 1.5;
+    }
+    #post-size{
+      line-height: 1.2;
+    }
+}
+@media(min-width:577px){
+    #img-responsive{
+        height: 220px;
+        width: 220px;;
+    }
+    #img-responsive2{
+        height: 220px;
+        width: 220px;;
+    }
+}
+#card-size{
+  width: 45%;
+}
+.swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  /* background-size: cover; */
+  width: 350px;
+  height: 400px;
+  padding-top: 20px;
+}
+@media (max-width: 991px){
+  .swiper-slide {
+ 
+  width: 300px;
+  }
+ 
+}
+@media (max-width: 586px){
+  .swiper-slide {
+ 
+  width: 220px;
+  height: 300px;
+ 
+}
+}
+.w-responsive{
+  width:30%!important;
+}
+@media (max-width: 740px){
+  .w-responsive{
+  width:100%!important;
+}
+}
+
+/* Animation Style */
+    .box{
+      top: 50%;
+      left: 50%;
+      border-radius: 20px;
+      width: fit-content;
+      transform: translate(-50%,0%);
+    }
+    .imgBx{
+      transition: 0.5s;
+      z-index: 2;
+    }
+    .box:hover .imgBx{
+      opacity: 0.7;
+    }
+    .imgBx img{
+      transition: 0.5s;
+    }
+    .box:hover .imgBx img{
+      opacity: 0.5;
+    }
+    @media(min-width: 891px){
+      .imgBxActive{
+        height: 432px!important;
+        width: 324px!important;
+        transition: 0.5s;
+        border-radius: 20px;
+        z-index: 0;
+      }
+    }
+    .imgBxActive{
+      transition: 0.5s;
+      border-radius: 20px;
+      z-index: 0;
+    }
+    .box:hover .imgBxActive{
+      transform: translateY(-0px);
+      opacity: 0.7;
+    }
+    .imgBxActive img{
+      transition: 0.1s;
+    }
+    .box:hover .imgBxActive img{
+      opacity: 0.7;
+    }
+    .social-icon{
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      transform: translate(-50%,-50%);
+      display: flex;
+      z-index: 3;
+    }
+    .social-icon li{
+      list-style: none;
+    }
+    .social-icon li a{
+      position: relative;
+      display: block;
+      width: 38px;
+      height: 38px;
+      text-align: center;
+      background: #fff;
+      border-radius: 50%;
+      transition: 0.5s;
+      transform: translateY(190px);
+      opacity: 0;
+    }
+    .box:hover .social-icon li a{
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    .box .social-icon li a .fab{
+      transition: 0.5s;
+    }
+    .box .social-icon li a .far{
+      transition: 0.5s;
+    }
+    .box .social-icon li a:hover .fab{
+      transform: rotateZ(360deg);
+    }
+    .box .social-icon li a:hover .far{
+      transform: rotateZ(360deg);
+    }
+    .box:hover .social-icon li:nth-child(1) a{
+      transition-delay: 0s;
+    }
+    .box:hover .social-icon li:nth-child(2) a{
+      transition-delay: 0.2s;
+    }
+    .box:hover .social-icon li:nth-child(3) a{
+      transition-delay: 0.4s;
+    }
+    .box:hover .social-icon li:nth-child(4) a{
+      transition-delay: 0.6s;
+    }
+    .details{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      width: 100%;
+      height: 81px;
+      box-sizing: border-box;
+      z-index: 1;
+      visibility: hidden;
+    }
+    .box.box:hover .details{
+        z-index: 2;
+        transition-delay: 0.1s;
+        visibility: visible;
+        height:fit-content;
+    }
+
+    .detailsActive
+    {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: transparent;
+        width: 100%;
+        height: 69px;
+        box-sizing: border-box;
+        padding: 10px;
+        padding-bottom: 10px;
+        z-index: 1;
+        visibility: hidden;
+    }
+    .box.box:hover .detailsActive{
+        z-index: 2;
+        transition-delay: 0.1s;
+        visibility: visible;
+    }
+    @media(max-width:576px){
+      .resize-font{
+        font-size: 16px;
+      }
+      .p-responsive{
+        font-size: 11px!important;
+        line-height: 13px!important;
+      }
+      .p-responsiveS{
+        font-size: 11.35px!important;
+        line-height: 13px!important;
+      }
+      .details{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        /* background-image: linear-gradient(to bottom right, white, lightblue); */
+        background-color: white;
+        width: 100%;
+        height: 65px;
+        box-sizing: border-box;
+        z-index: 1;
+      }
+      .box:hover .imgBx{
+        /* transform: translateY(-60px); */
+        opacity: 0.9;
+      }
+    }
+    @media(min-width: 991px),(max-width: 1200px){
+      .resize-font{
+        font-size: 18px;
+      }
+    }    
+    @media(max-width: 753px){
+      .p-responsive{
+        font-size: 12.5px!important;
+        line-height: 15.5px!important;
+      }
+      .p-responsiveS{
+        font-size: 12.5px!important;
+        line-height: 15.5px!important;
+      }
+    }       
+    @media(max-width: 400px){
+      .p-responsive{
+        font-size: 12.5px!important;
+        line-height: 15px!important;
+      }
+      .p-responsiveS{
+        font-size: 11.5px!important;
+        line-height: 12.7px!important;
+      }
+    }   
+    @media(min-width: 991px){
+      .p-responsive{
+        font-size: 12.5px!important;
+        line-height: 16px!important;
+      }      
+      .p-responsiveS{
+        font-size: 11.5px!important;
+        line-height: 16px!important;
+      }
+    }
+    @media(min-width: 1200px){
+      .p-responsive{
+        font-size: 13px!important;
+        line-height: 19px!important;
+      }
+      .p-responsiveS{
+        font-size: 13px!important;
+        line-height: 19px!important;
+      }
+    }
+
+
+
+    /* Active member Responsive */
+    .sam{
+      border-radius: 20px!important;
+      width: fit-content;
+      height: fit-content;
+    }
+    @media(min-width: 991px){
+      .sam{
+        height: 432px;
+        width: 325px;
+      }
+    }
+    .overlaySam {
+      position: absolute;
+      bottom: 0;
+      background: transparent;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      width: 100%;
+      transition: .5s ease;
+      opacity:1;
+    }
+    .box:hover .overlaySam{
+      background: rgb(240, 233, 233);
+      background: rgba(240, 233, 233, 1); /* Black see-through */
+      opacity: 1;
+    }
+
+    /* customizable snowflake styling */
+    .snowflake {
+      color: #fff;
+      font-size: 1em;
+      font-family: Arial, sans-serif;
+      text-shadow: 0 0 5px #000;
+    }
+    @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+  </style>
+</head>
+
+<body style="background-color: #16384C;">
+  <!--Header-->
+  <div>
+      <div class="header-section jarallax" data-speed="0.5" >
+     <!-- Navbar --> 
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar">
+    <!--Brand-->
+    <!--<a href="index.html"><img class="pt-0 " src="assets20/img/edc_santa11.webp" ></a>-->
+     <a class="navbar-brand navbar-text font-weight-bold" href="index.html">EDC VIIT</a> 
+    <!--Collapsible button-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon black-text " ></span>
+    </button>
+    <!--Collapsible content-->
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav mr-auto">
+      
+        <li class="nav-item wow fadeInDown" data-wow-delay="">
+          <a class="nav-link font-weight-bold" href="about-us.html"><i class="fa fa-info-circle  mr-1"></i>ABOUT US</a>
+        </li>
+        <li class="nav-item wow fadeInDown" data-wow-delay="">
+          <a class="nav-link  font-weight-bold" href="https://www.edcviit.com/blogs/index.html"><i class="far fa-newspaper mr-1"></i>BLOGS</a>
+        </li>
+        <li class="nav-item wow fadeInDown" data-wow-delay="">
+          <a class="nav-link grey-text  font-weight-bold" href="ourteam.html"><i class="fas fa-users mr-1"></i>OUR TEAM</a>
+        </li>
+        <li class="nav-item dropdown wow fadeInDown" data-wow-delay="1s">
+          <a class="nav-link font-weight-bold dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+             aria-expanded="false"><i class="fa fa-bolt mr-1" aria-hidden="true"></i>OUR INITIATIVES</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item font-weight-bolder" href="https://www.discusswith.edcviit.com/">Discussion Forum</a>
+            <a class="dropdown-item font-weight-bolder" href="https://www.edcviit.com/excelsior/index.html">Excelsior</a>
+            <a class="dropdown-item font-weight-bolder" href="#">Student Falicitation Centre</a>
+            <a class="dropdown-item font-weight-bolder" href="#">Business Plan Competition</a>
+            <a class="dropdown-item font-weight-bolder" href="#">Corpstrata</a>
+            <a class="dropdown-item font-weight-bolder" href="http://www.vishwapreneur.in">Vishwapreneur</a>
+          
+          </div>
+        </li>
+        <li class="nav-item wow fadeInDown" data-wow-delay="1.25s">
+          <a class="nav-link  font-weight-bold" href="contact-us.html"><i class="far fa-comments mr-1"></i>CONNECT WITH US</a>
+        </li>
+       
+      </ul>
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item wow fadeInDown">
+          <a class="nav-link waves-effect waves-light" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/edcviit" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item wow fadeInDown" data-wow-delay="0.25s">
+          <a class="nav-link waves-effect waves-light" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/EDC.VIIT" target="_blank">
+            <i class="fab fa-facebook" ></i>
+          </a>
+        </li>
+        <li class="nav-item wow fadeInDown" data-wow-delay="0.5s">
+            <a class="nav-link waves-effect waves-light"rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/edcviit" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+        </li>
+        <li class="nav-item wow fadeInDown" data-wow-delay="0.75s">
+            <a class="nav-link waves-effect waves-light" rel="tooltip" title="Subscribe us on Youtube" data-placement="bottom" href="https://www.youtube.com/user/vishwapreneur" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+  </div>
+  
+   <!--Navbar Ends here -->
+   
+    <!--Snow-->
+  <div class="snowflakes" aria-hidden="true">
+    <div class="snowflake" style="font-size:8px;">
+    ❅
+    </div>
+    <div class="snowflake" style="font-size:8px;">
+    ❆
+    </div>
+    <div class="snowflake" style="font-size:8px">
+    ❅
+    </div>
+    <div class="snowflake" style="font-size:8px;">
+    ❆
+    </div>
+    <div class="snowflake" style="font-size:8px;">
+      ❅
+    </div>
+    <div class="snowflake" style="font-size:8px;">
+      ❆
+    </div>
+    <div class="snowflake" style="font-size:8px;">
+      ❅
+    </div>
+    <div class="snowflake"  style="font-size:8px;">
+      ❆
+    </div>
+  </div>  
+         
+      
+   <section class="magazine-section pt-5 my-5 mx-lg-5 px-5">
+
+    <!-- Section heading -->
+    <h1 class=" font-weight-bold text-center my-5" style="font-size: 45px; color: white; font-family: fa5-proxima-nova,Helvetica,Arial,sans-serif;"><strong>OUR TEAM</strong></h1>
+    <!-- Section description -->
+    <!-- <p class="text-center w-responsive white-text mx-auto mb-5">Duis aute irure dolor in reprehenderit in voluptate velit
+      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit id laborum.</p> -->
+
+    <!--Top 3 START-->
+    <div class="row px-4 pb-2 flex-center">
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668398670/edcviit%2022-23%20team/hrushikesh_madankar_cbkjo2.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:hrushikesh.22010976@viit.ac.in " role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/hrushikesh-madankar-1409ab20a" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsiveS black-text " style="font-family: 'Raleway'; text-align: center;"><strong>He doesn't need the title of a leader, his personality speaks for him. A disciplined character who knows how to hold his team , And has a capacity to translate " Vision into Reality"</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Hrushikesh Madankar</h3>
+            <h5 class="white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px;text-align: center;" id="post-size"><strong>PRESIDENT</strong></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Vice Presidents-->
+    <div class="row px-4 pb-3 flex-center">
+      <!--No.1-->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668398671/edcviit%2022-23%20team/sanskriti_sharma_rl3fyo.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/Sanskriti_31	" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:sanskriti.22011160@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/sanskriti-sharma-75766419a/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text " style="font-family: 'Raleway';  text-align: center;"><strong>Humility,great ideas and consistency,she's got it all.The perfect amalgamation of soft spokennes and diligence makes her a valuable part of the team</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Sanskriti Sharma</h3>
+            <h5 class="white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway', sans-serif; font-size: 17px; text-align: center;" id="post-size"><strong>VICE PRESIDENT</strong></h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-0 col-sm-0 mb-3"></div>
+
+      <!--No.2-->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668398671/edcviit%2022-23%20team/parth_chavan_ssazjd.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:parth.22010312@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/parth-chavan-46448b210" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text " style="font-family: 'Raleway';  text-align: center;"><strong>A visionary and a diligent strategist, with wondrous work ethics. One with the best plan, and who always has something up his sleeve.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Parth Chavan</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px;text-align: center;" id="post-size"><strong>VICE PRESIDENT</strong></h5>
+          </div>
+        </div>
+      </div>
+      <!--.2-->
+    </div>
+    <!--Top3 END-->
+    
+    <!--Post Holders-->  
+    <!-- First row -->
+    <div class="row px-4 pb-3 flex-center">
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-3">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668398670/edcviit%2022-23%20team/hrishikesh_sonawane_p0bjqo.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/RhishikeshSona3?t=2kPrxwJ_aSjATlqh-3Ngrg&s=09" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:rhishikesh.22010585@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/rhishikesh-sonawane" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text " style="font-family: 'Raleway'; text-align: center;"><strong>He can mold the resources, processes, and values that affect innovation , into a coherent capability to develop great ideas</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway';text-align: center;">Rhishikesh Sonawane</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px;text-align: center;" id="post-size"><strong>GENERAL MANAGER</strong></h5>
+          </div>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5 ">
+
+        <div class="mb-3">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668398670/edcviit%2022-23%20team/jayveer_khandelwal_adue7p.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/Jayveer_1" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:jayveer.22010532@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/jayveer-khandelwal-b35a32216/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text " style="font-family: 'Raleway'; text-align: center;"><strong>The Finance Wizard of the cell. Aficionado of money, he makes every last penny matter.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class="white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway';text-align: center;">Jayveer Khandelwal</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px;text-align: center;" id="post-size"><strong>CHIEF FINANCE OFFICER</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-3">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668398670/edcviit%2022-23%20team/rutuja_img_ytkuz2.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:rutuja.22010425@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/rutuja-jadhav-28b658206" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text " style="font-family: 'Raleway'; text-align: center;"><strong>A passionate, extremely competent individual with a gregarious demeanour. Encourager of the team and skilled communicator.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class="white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway';text-align: center;">Rutuja Jadhav</h3>
+            <h5 class="white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>HUMAN RESOURCE MANAGER</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668398671/edcviit%2022-23%20team/viraj_padale_hbeh1j.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/Virajpadale" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:viraj.22011104@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/viraj-padale-b78476201/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text " style="font-family: 'Raleway'; text-align: center;"><strong>A introspective being who makes wonders on the wide spectrum of technology and an active learner who is never afraid to tackle new challenges.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class="white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Viraj Padale</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>TECHNICAL HEAD</strong></h5>
+          </div>
+        </div>
+      </div>
+      <!-- Grid column -->
+      
+    
+    <!-- Second row -->
+    <div class="row  pb-3 spacing">
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668398670/edcviit%2022-23%20team/akash_dudhane_y70mek.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/AkashDudhane711" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:akash.22010004@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/akash-dudhane-b0b30920b/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>Hardworking and dedicated individual who is open to new ideas and has a solid understanding of how to build something from the ground up.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Akash Dudhane</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>STARTUP EXECUTIVE</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668398670/edcviit%2022-23%20team/dhiraj_khivasara_ioasur.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/DhirajKhivasara?t=KpcSF_Cw0MrxCPy4icHKLg&s=09" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:dhiraj.22010718@viit.ac.in " role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/dhiraj-khivasara-027b17218" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>An energetic and enthusiastic start up executioner who inspires to break barriers. A great visionary behind an honest and kind demeanor.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Dhiraj Khivasara</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>STARTUP EXECUTIVE</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+      
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668398670/edcviit%2022-23%20team/atharva_chaudhary_mrh7kx.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/Atharva_C0814?t=KvcecbU8F3-3RaR-CelP9Q&s=09" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:atharva.22010697@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/atharva-chaudhari-6333b020b" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsiveS black-text" style="font-family: 'Raleway';font-size: 14px;line-height: 20px; text-align: center;"><strong>A cheerful and outgoing person, who is always full of energy and enthusiasm. A great strategist and a hardworking individual, who is never afraid to express his honest opinion.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Atharva Chaudhari</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>FINANCE LEAD MANAGER</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668534076/edcviit%2022-23%20team/20221115_082744-removebg-preview_h4hmxq.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/PranavK121031?t=SCN3PofrDeUokyxH2z2uTA&s=08" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:pranav.22010113@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/pranav-kulkarni-88877621a" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsiveS black-text" style="font-family: 'Raleway';text-align: center;"><strong>A top grade and clear-headed improviser. His makeshift maneuvers the cell through the tightest corners.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Pranav Kulkarni</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>GENERAL SECRATARY</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Second row -->
+
+    <!-- Third row -->
+    <div class="row  pb-3 flex-center">
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" style="height: 330px;width:280px;" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668534134/edcviit%2022-23%20team/IMG-20221114-WA0014-01-removebg-preview_uoensb.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/shutupthomas_?t=aNqrFjLyxFUTOhZs_OJdpg&s=09" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:mrunmai.22010930@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/mrunmai-patil-95a7bb20a" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>A perfect Marketer with a springboard for ideas,who's not afraid to voice their opinion or criticism</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Mrunmai Patil</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font" style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>MARKETING AND PUBLICITY STRATEGIST</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668398671/edcviit%2022-23%20team/mihir_yadav_ntt1mq.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/Mihirtweet1?t=hwl10n3_AgHouFj1mgufVQ&s=09" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:mihir.22011022@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/mihir-yadav1" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>Holds clear vision,is courageous,has integrity,honesty,and clear focus.His work ethic speaks for himself.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Mihir Yadav</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font" style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>MARKETING AND PUBLICITY STRATEGIST</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" style="height:330px ;" src="https://res.cloudinary.com/edcviitcom/image/upload/v1669283098/edcviit%2022-23%20team/sakshi_tale_new_jcy89v.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/TaleSakshi?t=fZWxzZwKUbQFAZ6UFyxK8A&s=09" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:sakshi.22010366@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/sakshi-tale" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>A creative person at heart with dazzling personality & extraordinary ability to juggle between priorities.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Sakshi Tale</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>MARKETING AND PUBLICITY STRATEGIST</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mt-4 mb-1">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668405735/edcviit%2022-23%20team/IMG_2578-removebg-preview_ofleu8.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/APOSTLE44774?t=oBb_6cZVSRQYyIzirF4jcA&s=09" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:kevin.22010038@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/kevin-jose-4736b4206" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>An exceptional personality with a combination of dazzling creativity and remarkable prudence.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Kevin Jose</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>DOCUMENTATION</strong></h5>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>HEAD</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+      
+    </div>
+    <!--.Third row -->
+    <!-- fourth row -->
+    <div class="row  pb-3 flex-center">
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1669283089/edcviit%2022-23%20team/atharva_shobhane_new_oiaqtt.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/AShobhane" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:atharva.22010539@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/atharva-shobhane-47b243213/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>Diligent, devoted, hardworking, and punctual in regards to work. Always willing to lend a hand, skilled and effective concept expressor. </strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Atharva Shobhane</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font" style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>OPERATIONS EXECUTIVE</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668398670/edcviit%2022-23%20team/hrushal_chaudhary_xsooiv.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/Hrushal2?t=NgafKCrTdv3r5RT9g5GwAw&s=09" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:hrushal.22010518@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/hrushal-chaudhary-43236a1b1" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>He is a person who is always ready to learn new things . His dedication towards Industry relations domain has helped us approach dynamic personalities.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">HRUSHAL CHAUDHARY</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font" style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>INDUSTRY RELATIONS HEAD</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668398671/edcviit%2022-23%20team/yash_gandhi_bonofn.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/YashGandhi09?t=BguMgC9yJrH9U0AEBHDqeA&s=09" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:yash.22010784@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/yash-gandhi-97531a235" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>One of the most calmest and patient human being, with the best networking  and leadership capabilities.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">YASH GANDHI</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>INDUSTRY RELATIONS HEAD</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!--.fourth row -->
+    <!-- fifth row -->
+    <div class="row  pb-3 flex-center">
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" style="height:20rem ;" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668398670/edcviit%2022-23%20team/anish_kekane_txuhfi.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:anish.22011189@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/anish-kekane-8ab32420b/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>Active Member </strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Anish Kekane</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font" style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>ACTIVE MEMBER</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" style="height:20rem ;" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668398671/edcviit%2022-23%20team/samkit_shah_uzhd9a.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/SamkitS89988607?t=iVDhgOXFIhp2JH69i4ZRrA&s=09" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:samkit.22010866@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/samkit-shah-" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>Active Member</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Samkit Shah</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font" style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>ACTIVE MEMBER</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668534158/edcviit%2022-23%20team/Md_Zaid_Bhaldar-removebg-preview_vamibx.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/ZaidBhaldar?t=6zkbRd6dgJdmqQKtG5tOpQ&s=08" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:mdzaid.22010377@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/zaid-bhaldar-07b0a4201" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>Active member</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Zaid Bhaldar</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font" style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>ACTIVE MEMBER</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668534133/edcviit%2022-23%20team/IMG_3535-removebg-preview_rnb56j.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/OBakkam" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:onkar.22011164@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/onkar-bakkam-531393207/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>Active Member</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Onkar Bakkam</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>ACTIVE MEMBER</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!--.fifth row -->
+    <!-- sixth row -->
+    <div class="row  pb-3 flex-center">
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668534134/edcviit%2022-23%20team/IMG20221115010300-removebg-preview-removebg-preview_zflj32.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/AtharvaNadkarn2?t=8wNGI0uo_QAr2xD-G6fVtA&s=09" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:atharva.22010194@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/atharva-nadkarni" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>Active Member </strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Atharva Nadkarni</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font" style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>ACTIVE MEMBER</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668534147/edcviit%2022-23%20team/-removebg-preview_ya9ndx.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/malhar_diwan?t=k_-EnlI4_diJDRDe8GS_0A&s=09" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:malhar.22010889@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/malhar-diwan" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>Active Member </strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Malhar Diwan</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font" style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>ACTIVE MEMBER</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" style="height: 19.375rem;width:12.5rem;" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668534147/edcviit%2022-23%20team/photo-removebg-preview_hhywlu.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://mobile.twitter.com/samruddhissathe" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:samruddhi.22010797@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="http://linkedin.com/in/samruddhi-sathe-91b456206" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>Active Member</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Samruddhi Sathe</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font" style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>ACTIVE MEMBER</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668534118/edcviit%2022-23%20team/IMG_1910-removebg-preview_kdhyj6.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/LokeshShingvi?t=zELwVXJqpJtINj0vWyH34g&s=03" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:lokesh.22010090@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/lokesh-shingvi-b270b421a" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>Active Member</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Lokesh Shingvi</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>ACTIVE MEMBER</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!--.sixth row -->
+    <!-- seventh row -->
+    <div class="row  pb-3 flex-center">
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668536135/edcviit%2022-23%20team/20221114_203216-01-removebg-preview_gjqged.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/Purvaja22668603?t=llPHpAnI50-SFPSb1LXQww&s=09" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:purvaja.22010042@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/purvaja-deshmukh-6780a1219/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>Active Member</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Purvaja Deskmukh</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font" style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>ACTIVE MEMBER</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668536135/edcviit%2022-23%20team/20221114_204817-01-removebg-preview_zhimbi.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/Harrshathakur?t=WJtwKA-FLIUxd5D8ptCgGw&s=09" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:harsha.22010292@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/harsha-thakur-796175203/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>Active Member</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Harsha Thakur</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font" style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>ACTIVE MEMBER</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <div class="view z-depth-2 mb-4 box" style="border-radius: 20px;">
+            <img class="img-fluid imgBx" src="https://res.cloudinary.com/edcviitcom/image/upload/v1668536135/edcviit%2022-23%20team/20221114_203253-01-removebg-preview_gpgsvj.jpg" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/ShrawaniG?t=k0qNJ_QnvgSDR90r2u7VSA&s=08" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:shrawani.22010212@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/shrawani-gulhane-8652ab249/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>Active Member</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Shrawani Gulhane</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font" style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>ACTIVE MEMBER</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!--.seventh row -->
+  </section>
+  
+   
+
+  <hr>
+<!--Footer Starts here-->
+
+    <footer>
+      <!-- Grid row -->
+      <div class="row px-2 px-lg-4 px-md-4 black align-items-center">
+    
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-8 py-lg-1 pt-2">
+    
+          <!--Copyright-->
+          <a href="#"></a>
+            <strong><h6 class="text-center white-text text-md-left">EDC VIIT 2022 | Developed by: EDC VIIT</h6></strong>
+          </a>
+    
+        </div>
+        <!-- Grid column -->
+    
+        <!-- Grid column -->
+        <div class="col-md-5 pt-lg-1 col-lg-4 ml-lg-0">
+    
+          <!-- Social buttons -->
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-0" style="border-radius: 50%;" href="https://www.instagram.com/edcviit">
+                  <i class="fab fa-instagram" style="color: white;"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-0" style="border-radius: 50%;" href="https://twitter.com/edcviit">
+                  <i class="fab fa-twitter" style="color: white;"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-0" style="border-radius: 50%;" href="https://www.linkedin.com/company/entrepreneurship-development-cell-viit/">
+                  <i class="fab fa-linkedin-in" style="color: white;"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-0" style="border-radius: 50%;" href="https://www.youtube.com/user/vishwapreneur">
+                  <i class="fab fa-youtube" style="color: white;"></i>
+                </a>
+              </li>
+              <li class="list-inline-item pt-2">
+                <a class="btn-floating btn-sm fb-ic rgba-white-slight mx-0" style="border-radius: 50%;" href="https://www.facebook.com/EDC.VIIT">
+                  <i class="fab fa-facebook-f" style="color: white;"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+    
+        </div>
+        <!-- Grid column -->
+    
+      </div>
+      <!-- Grid row -->
+    
+    </div>
+    <!-- Footer Links -->
+    
+    
+    </footer>
+    
+                <!-- SCRIPTS -->
+                <!-- JQuery -->
+    <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+    <!--Custom JavaScript-->
+    <script type="text/javascript" src="assets/js/customJS.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!--snow-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/JQuery-Snowfall/1.7.4/snowfall.jquery.min.js"></script> <!--snow-->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script> -->
+    <script>
+      //snowfall
+      $(document).snowfall();
+      $(window).resize(() => {
+          $(document).snowfall('clear');
+          $(document).snowfall();
+      });
+    </script>
+    <!--WOW Animations-->
+    <script src="assets/js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        loop:true,
+        coverflowEffect: {
+          rotate: 40,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows : true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      });
+    </script>
+</body>
+
+</html>
