@@ -37,7 +37,7 @@ function copy() {
   // icon2.click();
   navigator.share("Hello world");
 
-  navigator.clipboard.writeText("edcviit.github.io/newsletter/").then(
+  navigator.clipboard.writeText("edcviit.com/newsletter/").then(
     function () {
       text2.style.fontSize = "16px";
       // console.log("Copied to clipboard successfully!");
