@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles6.css" />
+    <title>EDC | Newsletter</title>
+    <link rel="icon" type="image/x-icon" href="../assets/EDC-icon.ico">
+</head>
+
+<body>
+    <input style="margin: -100%" id="copy-link" value="edcviit.github.io/newsletter">
+    <div id="main">
+        <div class="reading-indicator"></div>
+        <div class="reading-indicator-bg"></div>
+        <div class="nav">
+            <div class="logo-name">
+                <img src="../assets/logoNewsletter.svg" alt="VIIT Logo" />
+            </div>
+            <div class="letter-name">
+                <img src="../assets/newsName.svg" alt="Letter logo" />
+            </div>
+            <div class="logo-name">
+                <img src="../assets/EDC-icon.webp" alt="EDC Logo" />
+            </div>
+        </div>
+
+        <div class="hero">
+            <div class="hero-content" id="scrollDiv">
+                <div class="mid">
+                    <h2>Beyond Business</h2>
+                    <div class="subtitle">
+                        <i>"Entrepreneurs at the Vanguard of Social Transformation"</i>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="like" id="click-icon">
+                        <li>
+                            <svg fill="#ffffff" height="35px" width="35px" version="1.1" id="Capa_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="-47.17 -47.17 566.04 566.04" xml:space="preserve" stroke="#ffffff"
+                                stroke-width="0.004717010000000001" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke="#CCCCCC" stroke-width="9.43402"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g>
+                                        <path
+                                            d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3 C444.801,187.101,434.001,213.101,414.401,232.701z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </li>
+
+                        <p class="hidden-text liked" id="clicked-text">Liked</p>
+                    </div>
+                    <svg id="liked-by-user" fill="#ffffff" width="64px" height="64px" viewBox="0 0 1920 1920"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M1771.731 291.037C1675.709 193.659 1547.944 140 1411.818 140h-.113c-136.125 0-263.777 53.66-359.573 150.924-37.618 38.07-68.571 80.997-92.294 127.426-23.61-46.429-54.563-89.356-92.068-127.313C771.86 193.659 644.208 140 507.97 140h-.113c-136.012 0-263.777 53.66-359.8 151.037-197.691 200.629-197.691 527.103 1.695 729.088l810.086 760.154 811.893-761.736c197.692-200.403 197.692-526.877 0-727.506"
+                                fill-rule="evenodd"></path>
+                        </g>
+                    </svg>
+                    <div class="copy" onclick="copy()" id="copy">
+                        <li class="share" id="click-icon2">
+                            <svg width="67px" height="67px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
+                                fill="#ffffff">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path fill="#ffffff"
+                                        d="M768 832a128 128 0 0 1-128 128H192A128 128 0 0 1 64 832V384a128 128 0 0 1 128-128v64a64 64 0 0 0-64 64v448a64 64 0 0 0 64 64h448a64 64 0 0 0 64-64h64z">
+                                    </path>
+                                    <path fill="#ffffff"
+                                        d="M384 128a64 64 0 0 0-64 64v448a64 64 0 0 0 64 64h448a64 64 0 0 0 64-64V192a64 64 0 0 0-64-64H384zm0-64h448a128 128 0 0 1 128 128v448a128 128 0 0 1-128 128H384a128 128 0 0 1-128-128V192A128 128 0 0 1 384 64z">
+                                    </path>
+                                </g>
+                            </svg>
+
+                        </li>
+                        <p class="hidden-text copied" id="clicked-text2">Link Copied</p>
+                    </div>
+                    <div>
+                        <a
+                            href="https://twitter.com/intent/tweet?text=Check%20out%20this%20amazing%20article%20by%20@edcviit%20%20edcviit.com/newsletter/6/%20">
+                            <li><img src="../assets/x.png" height="26" alt="" /></li>
+                            <p class="hidden-text">Hello World</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img class="img2 background"
+                src="https://res.cloudinary.com/dwrlwv8gz/image/upload/v1704689493/mli3yqoulmnzbw4j3w95.jpg" alt="" />
+        </div>
+        <div class="page2-content">
+            <h3>
+                <i>INTRODUCTION </i>
+            </h3>
+            <br>
+            <p>Social impact businesses are firms that strive to turn revenues alongside having beneficial social and
+                environmental
+                impact. These firms aim to address varying societal concerns and thrive sustainable development. In
+                recent years, there
+                has been an evident trend in the business climate toward the incorporation of social responsibility into
+                entrepreneurial
+                endeavours. This shift is being fuelled by a growing understanding of the interplay between corporate
+                operations and
+                their broader effects on communities, the environment, and a range of other stakeholders. </p>
+            <br>
+            <p>
+                <!-- 2nd para -->
+            </p>
+        </div>
+
+        <div class="page3">
+            <img src="https://res.cloudinary.com/dwrlwv8gz/image/upload/v1704689493/ofourz3qtotm1atrlbaj.jpg" alt="" />
+            <div class="page3-content">
+                <h3>
+                    <i>
+                        Characteristics of Social Impact Ventures
+                    </i>
+                </h3>
+                <br>
+                <p>
+                    <i> 1. Driven by Mission:</i><br>
+                    A specific goal to remedy a social or environmental issue is frequently the foundation of social
+                    impact ventures. The
+                    goal is to bring about positive change rather than just make money.
+                    <br><br>
+                    <i>2. The Triple Bottom Line: </i><br>
+                    These businesses prioritize the triple bottom line, taking into account the effects of their
+                    operations on society and
+                    the environment in addition to financial performance. Profit, people, and the earth are the three
+                    pillars that matter
+                    most when assessing success.
+                    <br><br>
+                    <i> 3. Creative Remedies:</i><br>
+                    Innovative and sustainable solutions are frequently utilized by social impact ventures to tackle
+                    societal issues. This
+                    could entail innovative technology, business plans, or strategies that put profit and good effect
+                    first.
+                    <br><br>
+                    <i> 4. Measurable Impact:</i><br>
+                    These initiatives' social and environmental effects are assessed using quantitative criteria. This
+                    focus on
+                    accountability makes it easier to make sure the company is fulfilling its objective and producing a
+                    noticeable impact.
+                </p>
+                <br>
+                <br>
+
+
+
+            </div>
+        </div>
+        <div class="page4 ">
+            <img src="https://res.cloudinary.com/dwrlwv8gz/image/upload/v1704689493/kthsydnvdqd0pp8jugdz.jpg" alt="">
+            <div class="page4-content">
+                <h3>
+                    <i>
+                        Importance of Social Responsibility in Entrepreneurship:
+                    </i>
+                </h3>
+                <br>
+                <p>
+                    <i> 1. Obligations from Customers:</i><br>
+                    Today's consumers are more cognizant of the ecological and societal repercussions of the goods they
+                    acquire. Businesses
+                    that exhibit their devotion to social responsibility may lure and keep clients who embrace
+                    comparable beliefs.
+                    <br><br>
+                    <i> 2. Adherence to Regulations:</i><br>
+                    Corporate social responsibility is growing progressively more significant as reported by governments
+                    and oversight
+                    organizations. Adopting ethically and environmentally sound procedures guarantees adherence to
+                    changing laws and lowers
+                    the possibility of legal problems.
+                    <br><br><i>
+                        3. Risk Mitigation:</i><br>
+                    By encouraging moral conduct, openness, and long-term sustainability, socially conscious company
+                    practices can reduce
+                    business risks. This can improve a business's standing and ability to withstand future crises.
+                    <br><br><i>
+                        4. Global Challenges:</i>
+                    Cooperation is essential for tackling contemporary problems including poverty, inequality, and
+                    climate change. Social
+                    responsibility is a crucial component of identifying imaginative solutions to global problems since
+                    entrepreneurs have a
+                    rare opportunity to do so.
+
+                </p>
+                <br>
+            </div>
+        </div>
+        <div class="page4 ">
+            <img src="https://res.cloudinary.com/dwrlwv8gz/image/upload/v1704689493/c2ex88zpcd16wh7reymp.jpg" alt="">
+            <div class="page4-content">
+                <h3>
+                    <i>
+                        Case Studies </i>
+                </h3>
+                <br>
+                <p>
+                    <i>1. Tom's Shoes:</i>
+                    <br>
+                    Tom's Shoes is known for its "One for One" business model, where for every pair of shoes sold,
+                    another pair is donated
+                    to a child in need. This model has been successful in creating positive social impact while
+                    maintaining a profitable
+                    business.
+                    <br><br><i>
+
+                        2. Patagonia:</i>
+                    Patagonia, an outdoor clothing company, is committed to environmental sustainability. They donate a
+                    percentage of their
+                    profits to environmental causes and actively promote fair labor practices in their supply chain.
+                    <br><br><i>
+                        3. Tesla:</i>
+                    Tesla, led by Elon Musk, is not only disrupting the automotive industry with electric vehicles but
+                    is also contributing
+                    to the global transition towards sustainable energy, addressing environmental concerns.
+                </p>
+                <br><br>
+                <h3> <em>Summing Up</em></h3>
+                <p>Social impact ventures showcase the potential for businesses to be a force for good. The growing
+                    importance of social
+                    responsibility in entrepreneurship reflects a broader recognition of the need for businesses to
+                    contribute positively to
+                    society. As this trend continues, we can expect more entrepreneurs to integrate social impact into
+                    their business
+                    models, creating a more sustainable and equitable future.</p>
+            </div>
+
+        </div>
+
+        <!-- <div class="page5 ">
+            <div class="image">
+                <img src="../assets/newsletter2/IMG_20231104_200012_upscaled.webp" alt=""  />
+            </div>
+            <div class="page5-content">
+                <h3>
+                    <i>
+                        INCORPORATING CGI INTO COMMERCIAL MARKETING :
+                    </i>
+                </h3>
+                <br>
+                <br>
+                <p>
+                    Once upon a time, in the world of marketing, CGI stepped onto the stage, offering brands a
+                    magical path to captivating their audiences:
+                <p><br>
+                    <b> 1) Cost-Efficiency with CGI: </b> In the world of commercial marketing, CGI offers a
+                    cost-effective alternative to traditional photography and videography. It eliminates the need
+                    for expensive crews and reduces transportation expenses and logistics hassles.
+                </p>
+                <p><br>
+                    <b>2) Maximizing Audience Impact: </b> The essence of any successful commercial marketing
+                    campaign is leaving a lasting impression on the audience. CGI achieves this by creating wonder
+                    and enhancing the overall viewing experience, ensuring a stronger connection with customers.
+                </p>
+                <p><br>
+                    <b>3) Visualizing Products in Advance:</b> When your product isn't ready for a photoshoot, CGI
+                    comes to the rescue. It allows you to visualize prototypes and products well before their
+                    official launch.
+                </p>
+                <p><br>
+                <h3><i>CONCLUSION</i></h3>
+                With the help of CGI, you will be able to create your products from scratch, even if they have not
+                made it beyond your research and development centres.
+                </p>
+
+                </p>
+                <br>
+            </div> -->
+
+
+
+    </div> <!-- <button onclick="copy()" id="copy">Copy</button> -->
+    <script src="../script.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
