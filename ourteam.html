@@ -38,6 +38,184 @@
   </script>
 
   <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+}
+
+.area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Ensures content is above the background */
+    padding-bottom: 0px; /* Space for footer */
+}
+
+body {
+    position: relative;
+    z-index: 1; /* Ensures your content is layered on top */
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+.circles li:nth-child(11) {
+    left: 30%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 2s;
+    animation-duration: 16s;
+}
+
+.circles li:nth-child(12) {
+    left: 15%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 5s;
+    animation-duration: 25s;
+}
+
+.circles li:nth-child(13) {
+    left: 80%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 3s;
+    animation-duration: 20s;
+}
+
+.circles li:nth-child(14) {
+    left: 45%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 6s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(15) {
+    left: 60%;
+    width: 120px;
+    height: 120px;
+    animation-delay: 8s;
+    animation-duration: 22s;
+}
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
     @media(max-width:576px) {
       #img-responsive {
         height: 200px;
@@ -737,7 +915,27 @@
       </nav>
     </div>
   </div>
+<div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+	    <li></li>
+	    <li></li>
+	    <li></li>
+	    <li></li>
+	    <li></li>
 
+        </ul>
+    </div>
+<div class="content">
   <section class="magazine-section pt-5 my-5 mx-lg-5 px-5">
 
     <!-- Section heading -->
@@ -805,7 +1003,7 @@
           <!--Thewego view-->
           <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
             <img class="img-fluid images23"
-              src="assets/img/Our Team/Aum.png"
+              src="assets/img/Our Team/Krishna.png"
               loading="lazy" alt="Aum's image">
             <div class="mask rgba-black-strong">
               <ul class="social-icon">
@@ -819,17 +1017,16 @@
             </div>
             <div class="details flex-center">
               <p class="p-responsive black-text " style="font-family: 'Raleway'; text-align: center;">
-                <strong>Organizes and brings together different parts to make sure the team works well and achieves
-                  success.</strong>
+                <strong>The Chief Finance Officer manages the E-Cell's financial operations, handles budgeting, and secures sponsorships to ensure sustainable growth of all entrepreneurial initiatives.                </strong>
               </p>
             </div>
           </div>
           <div>
             <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font"
-              style="font-family: 'Raleway';text-align: center;">Aum Chhajed</h3>
+              style="font-family: 'Raleway';text-align: center;">Krishna Jodh</h3>
             <h5 class=" white-text font-weight-bolder mb-1 resize-font "
-              style="font-family: 'Raleway'; font-size: 17px;text-align: center;" id="post-size"><strong>GENERAL
-                MANAGER</strong></h5>
+              style="font-family: 'Raleway'; font-size: 17px;text-align: center;" id="post-size"><strong>CHIEF FINANCE
+                OFFICER</strong></h5>
           </div>
         </div>
       </div>
@@ -844,7 +1041,7 @@
           <!--Thewego view-->
           <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
             <img class="img-fluid images23"
-              src="assets/img/Our Team/Krishna.png"
+              src="assets/img/Our Team/Aum.png"
               loading="lazy" alt="Krishna's image">
             <div class="mask rgba-black-strong">
               <ul class="social-icon">
@@ -857,16 +1054,16 @@
               </ul>
             </div>
             <div class="details flex-center">
-              <p class="p-responsive black-text " style="font-family: 'Raleway'; text-align: center;"><strong>The
-                  Manages financial resources and ensures fiscal responsibility.</strong></p>
+              <p class="p-responsive black-text " style="font-family: 'Raleway'; text-align: center;"><strong>Organizes all events and creates a roadmap for the entire tenure, playing a key role in shaping the agenda and ensuring smooth operations for a successful year.
+             </strong></p>
             </div>
           </div>
           <div>
             <h3 class="white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font"
-              style="font-family: 'Raleway';text-align: center;">Krishna Jodh</h3>
+              style="font-family: 'Raleway';text-align: center;">Aum Chhajed</h3>
             <h5 class=" white-text font-weight-bolder mb-1 resize-font "
-              style="font-family: 'Raleway'; font-size: 17px;text-align: center;" id="post-size"><strong>CHIEF FINANCE
-                OFFICER</strong></h5>
+              style="font-family: 'Raleway'; font-size: 17px;text-align: center;" id="post-size"><strong>GENERAL
+                MANAGER</strong></h5>
           </div>
         </div>
 
@@ -896,9 +1093,7 @@
               </div>
               <div class="details flex-center">
                 <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>
-                    Ensures smooth administrative operations and effective communication within the team, playing a key
-                    role in
-                    organizational coordination.</strong></p>
+                  Efficiently manage office resources while collaborating with college administration.</strong></p>
               </div>
             </div>
             <div>
@@ -936,9 +1131,7 @@
               </div>
               <div class="details flex-center">
                 <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>
-                    Ensures smooth administrative operations and effective communication within the team, playing a key
-                    role in
-                    organizational coordination.</strong></p>
+                  An HR in our cell manages recruitment, training, and member relations, resolving issues, fostering communication, and creating a positive team atmosphere.</strong></p>
               </div>
             </div>
             <div>
@@ -1018,7 +1211,7 @@
               <div class="details flex-center">
                 <p class="p-responsiveS black-text"
                   style="font-family: 'Raleway';font-size: 14px;line-height: 20px; text-align: center;"><strong>
-                    Leads and implements technical projects for the team's success.</strong></p>
+                    Leads technical initiatives, guiding the team in executing impactful and skill-building projects.</strong></p>
               </div>
             </div>
             <div>
@@ -1055,9 +1248,7 @@
               </div>
               <div class="details flex-center">
                 <p class="p-responsive black-text" style="font-family: 'Raleway'; text-align: center;"><strong>
-                  Develops and executes dynamic marketing and publicity strategies to enhance the Cell's visibility
-                  and outreach with
-                  creativity and expertise.</strong></p>
+                  Develops and executes dynamic marketing and publicity strategies, enhances EDC's visibility and reach, propelling its impact to new heights and engaging a wider audience.</strong></p>
               </div>
             </div>
             <div>
@@ -1093,9 +1284,7 @@
               </div>
               <div class="details flex-center">
                 <p class="p-responsive black-text" style="font-family: 'Raleway'; text-align: center;"><strong>
-                  Develops and executes dynamic marketing and publicity strategies to enhance the Cell's visibility
-                  and outreach with
-                  creativity and expertise.</strong></p>
+                  With dynamic marketing and publicity strategies, amplifies EDC's visibility and drive its reach to new heights, connecting with and inspiring a broader audience.</strong></p>
               </div>
             </div>
             <div>
@@ -1138,8 +1327,7 @@
             </div>
             <div class="details flex-center">
               <p class="p-responsive black-text " style="font-family: 'Raleway'; text-align: center;">
-                <strong>Organizes and brings together different parts to make sure the team works well and achieves
-                  success.</strong>
+                <strong>The CRC Head builds strong connections with students, faculty, and stakeholders, ensuring clear communication and managing permissions to support EDC events and initiatives.</strong>
               </p>
             </div>
           </div>
@@ -1175,7 +1363,8 @@
               </ul>
             </div>
             <div class="details flex-center">
-              <p class="p-responsive black-text " style="font-family: 'Raleway'; text-align: center;"><strong>Streamlines and enhances operational efficiency, ensuring seamless execution of tasks and contributing to the overall smooth functioning of the Cell.</strong></p>
+              <p class="p-responsive black-text " style="font-family: 'Raleway'; text-align: center;"><strong>An active member in our cell is an all-rounder who supports every aspect of the group's needs, stepping in wherever help is required.
+              </strong></p>
             </div>
           </div>
           <div>
@@ -1212,7 +1401,8 @@
               </div>
               <div class="details flex-center">
                 <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>
-                  Streamlines and enhances operational efficiency, ensuring seamless execution of tasks and contributing to the overall smooth functioning of the Cell.</strong></p>
+                  An active member in our cell is an all-rounder who supports every aspect of the group's needs, stepping in wherever help is required.
+</strong></p>
               </div>
             </div>
             <div>
@@ -1315,7 +1505,7 @@
 
 
   </footer>
-
+</div>
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
@@ -1334,11 +1524,11 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script> -->
   <script>
     //snowfall
-    $(document).snowfall();
-    $(window).resize(() => {
-      $(document).snowfall('clear');
-      $(document).snowfall();
-    });
+    // $(document).snowfall();
+    // $(window).resize(() => {
+    //   $(document).snowfall('clear');
+    //   $(document).snowfall();
+    // });
   </script>
   <!--WOW Animations-->
   <script src="assets/js/wow.js"></script>
