@@ -11,14 +11,11 @@
     <link href="assets/css/colorbox.css" rel="stylesheet" /><noscript>
         <link rel="stylesheet" href="assets/css/noscript.css"></noscript>
     <script src="assets/js/jquery.min.js"></script>
-    <link type="text/css" href="skin/pink.flag/css/jplayer.pink.flag.css" rel="stylesheet" />
-    <script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
     <script src="assets/js/recentPost.js"></script>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143610978-1"></script>
     <!-- WEB PUSH BY SENDPULSE
-  <script charset="UTF-8" src="//cdn.sendpulse.com/js/push/22183ecb046076677882534253378e54_1.js" async></script>-->
+	<script charset="UTF-8" src="//cdn.sendpulse.com/js/push/22183ecb046076677882534253378e54_1.js" async></script>-->
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -43,35 +40,6 @@
             });
         });
     </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#jquery_jplayer_1").jPlayer({
-                ready: function() {
-                    $(this).jPlayer("setMedia", {
-
-                        mp3: "podcasts/ev.mp3",
-                        oga: "podcasts/ev.ogg",
-                    });
-                },
-                cssSelectorAncestor: "#jp_container_1",
-                swfPath: "/js",
-                wmode: "window",
-                solution: "html,flash",
-                supplied: "mp3, oga",
-                useStateClassSkin: true,
-                autoBlur: false,
-                smoothPlayBar: true,
-                keyEnabled: true,
-                remainingDuration: true,
-                toggleDuration: true,
-
-
-
-
-            });
-        });
-    </script>
-
     <style>
         .row {
             display: flex;
@@ -81,37 +49,9 @@
             flex: 50%;
         }
         
-        .jp-audio {
-            width: 750px;
-            height: 140px;
-            margin-bottom: 40px;
-            margin-left: 45px;
-        }
-        
-        .jp-progress {
-            width: 700px;
-        }
-        
-        .align {
-            margin-top: 145px;
-        }
-        
         @media only screen and (min-device-width: 250px) and (max-device-width: 770px) {
             .row {
                 display: block;
-            }
-            .jp-audio {
-                width: 250px;
-                height: 160px;
-                margin-bottom: 30px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .jp-progress {
-                width: 200px;
-            }
-            .align {
-                margin-top: 0px;
             }
         }
     </style>
@@ -137,27 +77,24 @@
             <ul class="links">
                 <li class="active"><a href="index.html">Home</a></li>
                 <li class="wow fadeInUp" data-wow-delay="0.5s"><a href="newsletters.html">Newsletters</a></li>
-                <li class="wow fadeInUp" data-wow-delay="1.0s"><a id="rp" href="">Recent Post</a></li>
+                <li class="wow fadeInUp" data-wow-delay="0.5s"><a id="rp" href="">Recent Post</a></li>
                 <script>
                     updateLink();
                 </script>
                 <!-- <li class="wow fadeInUp" data-wow-delay="1s"><a href="#footer">About Us</a></li> -->
-                <li class="wow fadeInUp" data-wow-delay="1.5s"><a href="#footer">Contact Us</a></li>
-                <li class="wow fadeInUp" data-wow-delay="2.0s"><a class="iframe" href="newsletter.html">Subscribe</a></li>
-            </ul>
-            <ul class="icon">
-                <li><span class="label">Twitter</span></a>
+                <li class="wow fadeInUp" data-wow-delay="1.0s"><a href="#footer">Contact Us</a></li>
+                <li class="wow fadeInUp" data-wow-delay="1.5s"><a class="iframe" href="newsletter.html">Subscribe</a>
                 </li>
-                <li class="wow fadeInUp" data-wow-delay="2.2s"><a href="https://www.facebook.com/EDC.VIIT" class="icon fa-facebook"><span
-                   class="label">Facebook</span></a></li>
-                <li class="wow fadeInUp" data-wow-delay="2.5s"><a href="https://www.youtube.com/user/vishwapreneur" class="icon fa-youtube-play"><span
-                   class="label">Youtube</span></a></li>
-                <li class="wow fadeInUp" data-wow-delay="3.0s"><a href="https://www.instagram.com/edcviit/?hl=en" class="icon fa-instagram"><span
-                   class="label">Instagram</span></a></li>
+            </ul>
+
+            <ul class="icons">
+                <li class="wow fadeInUp" data-wow-delay="2.0s"><a class="icon fa-twitter" href="https://twitter.com/edcviit"><span class="label">Twitter</span></a></li>
+                <li class="wow fadeInUp" data-wow-delay="2.2s"><a class="icon fa-facebook" href="https://www.facebook.com/EDC.VIIT"><span class="label">Facebook</span></a></li>
+                <li class="wow fadeInUp" data-wow-delay="2.5s"><a class="icon fa-youtube-play" href="https://www.youtube.com/user/vishwapreneur"><span class="label">Youtube</span></a></li>
+                <li class="wow fadeInUp" data-wow-delay="3.0s"><a class="icon fa-instagram" href="https://www.instagram.com/edcviit/?hl=en"><span class="label">Instagram</span></a></li>
             </ul>
         </nav>
         <!-- Main -->
-
         <div id="main">
             <!-- Post -->
             <section class="post" data-wow-delay="1s">
